@@ -5,9 +5,109 @@
     xmlns:local="using:Philosopher"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    xmlns:mod="using:Philosopher.Models"    
+    mc:Ignorable="d"
+    Loaded="Page_Loaded">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock x:Name="HeaderBlock"                   
+                       Style="{StaticResource HeaderTextBlockStyle}"
+                       Text="Scripts"/>
+
+            <TextBlock x:Name="ConnectedToBlock"
+                       Style="{StaticResource SubtitleTextBlockStyle}">
+                <Run Text="Conntected to:"/>
+                <Hyperlink Foreground="{StaticResource SystemControlHighlightAltListAccentHighBrush}">
+                    <Hyperlink.Inlines>
+                        <Run Text="{x:Bind DataService.BaseUrl, Mode=OneWay}"/>
+                    </Hyperlink.Inlines>
+                </Hyperlink>
+            </TextBlock>                       
+
+        </StackPanel>
+
+        <GridView x:Name="ScriptsGrid"
+                  Grid.Row="1"
+                  Margin="0 10 0 0"
+                  ItemsSource="{x:Bind ScriptList, Mode=OneWay}"
+                  IsItemClickEnabled="True"
+                  ItemClick="ScriptsGrid_ItemClick"
+                  CanReorderItems="True"
+                  AllowDrop="True"
+                  ReorderMode="Enabled">
+            <GridView.ItemContainerTransitions>
+                <TransitionCollection>
+                    <AddDeleteThemeTransition/>
+                    <ContentThemeTransition/>
+                    <ReorderThemeTransition/>
+                    <EntranceThemeTransition IsStaggeringEnabled="True"/>
+                </TransitionCollection>
+            </GridView.ItemContainerTransitions>
+
+            
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="local:ServerScriptVm">
+                    <Grid Background="{StaticResource SystemControlHighlightAltAccentBrush}"
+                          Width="100"
+                          Height="100">
+
+                        <FlyoutBase.AttachedFlyout>
+                            <Flyout x:Name="ResponseFlyout" Placement="Bottom"/>
+                        </FlyoutBase.AttachedFlyout>
+                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="8*"/>
+                            <RowDefinition Height="2*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock x:Name="TitleBlock"
+                                   Grid.Row="0"
+                                   Margin="5 0 0 0"
+                                   TextWrapping="Wrap"
+                                   Text="{x:Bind Name, Mode=OneWay}"
+                                   Style="{StaticResource BodyTextBlockStyle}"
+                                   Foreground="White"
+                                   FontWeight="SemiBold"/>
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                        <TextBlock Grid.Column="0" 
+                                   Margin="5 0 0 5"
+                                   TextWrapping="Wrap"
+                                   VerticalAlignment="Bottom"
+                                   Text="{x:Bind ScriptKind, Mode=OneWay}"
+                                   Style="{StaticResource CaptionTextBlockStyle}"
+                                   Foreground="White"/>
+
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Margin="0 0 0 2">
+                                <Rectangle UseLayoutRounding="False" Fill="White" Height="1" Width="8"/>
+                                <Rectangle Margin="0 2 0 0" UseLayoutRounding="False" Fill="White" Height="1" Width="8"/>
+                            </StackPanel>
+                        </Grid>
+
+                        <ProgressRing Grid.Row="0"
+                                      Grid.RowSpan="2"
+                                      Foreground="White"
+                                      Width="80"
+                                      Height="80"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Center"
+                                      IsActive="{x:Bind IsLoading, Mode=OneWay}"/>
+
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
 
     </Grid>
 </Page>
