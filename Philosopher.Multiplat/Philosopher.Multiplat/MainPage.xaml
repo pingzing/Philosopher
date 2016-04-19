@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Philosopher.Multiplat.MainPage"
+             Appearing="MainPage_OnAppearing"
+             Padding="10">
+  <Grid RowSpacing="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    
+    <StackLayout Grid.Row="0">
+      <Label x:Name="HeaderLabel"
+             Style="{DynamicResource TitleStyle}"
+             Text="Scripts"/>
+
+      <StackLayout Orientation="Horizontal">
+        <Label x:Name="ConnectedToLabel"
+               Style="{DynamicResource SubtitleStyle}"
+               Text="Connected to: "/>        
+        <Button x:Name="ConnectedToLink"
+                Text="{Binding DataService.BaseUrl}"
+                BackgroundColor="Transparent"
+                BorderWidth="0"
+                Clicked="ConnectedToLink_OnClicked"/>
+      </StackLayout>
+    </StackLayout>
+    
+    <ListView x:Name="ScriptsListView"
+              Grid.Row="1"
+              ItemsSource="{Binding ScriptList}"
+              ItemTapped="ScriptsListView_OnItemTapped"
+              HasUnevenRows="True"
+              RowHeight="-1">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Frame Padding="0,0,0,10">              
+              <StackLayout Padding="5,0,5,5" BackgroundColor="Accent">
+                                        
+                  <Label x:Name="TitleBlock"                       
+                         LineBreakMode="CharacterWrap"
+                         Text="{Binding Name}"
+                         TextColor="White"
+                         Style="{DynamicResource BodyStyle}"
+                         FontAttributes="Bold"/>     
+                
+                <Label x:Name="ResponseBlock"
+                       LineBreakMode="WordWrap"
+                       Text="{Binding LastServerResponse}"
+                       TextColor="White"
+                       Style="{DynamicResource BodyStyle}"
+                       FontAttributes="Italic"
+                       IsVisible="{Binding ShouldShow}"/>
+              
+                <ContentView Padding="0, 5, 0, 0">
+                  <Label x:Name="TypeBlock"                       
+                         LineBreakMode="CharacterWrap"
+                         Text="{Binding ScriptKind}"
+                         TextColor="White"                       
+                         Style="{DynamicResource CaptionStyle}"/>
+                </ContentView>
+            
+              </StackLayout>              
+            </Frame>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+      
+    </ListView>
+    
+  </Grid>
+</ContentPage>
