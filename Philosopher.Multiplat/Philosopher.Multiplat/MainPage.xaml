@@ -14,17 +14,20 @@
       <Label x:Name="HeaderLabel"
              Style="{DynamicResource TitleStyle}"
              Text="Scripts"/>
-
-      <StackLayout Orientation="Horizontal">
-        <Label x:Name="ConnectedToLabel"
-               Style="{DynamicResource SubtitleStyle}"
-               Text="Connected to: "/>        
-        <Button x:Name="ConnectedToLink"
-                Text="{Binding DataService.BaseUrl}"
-                BackgroundColor="Transparent"
-                BorderWidth="0"
-                Clicked="ConnectedToLink_OnClicked"/>
-      </StackLayout>
+      
+      <Label x:Name="ConnectedToLabel"
+              Style="{DynamicResource SubtitleStyle}"
+              Text="Connected to: "/>      
+      
+      <Button x:Name="ConnectedToLink"
+              Text="{Binding DataService.BaseUrl}"
+              BackgroundColor="Transparent"
+              BorderWidth="0"
+              Clicked="ConnectedToLink_OnClicked"/>      
+    
+    <Label x:Name="ResponseLabel"
+           Style="{DynamicResource ListItemTextStyle}"
+           Text="{Binding MostRecentServerResponse}"/>
     </StackLayout>
     
     <ListView x:Name="ScriptsListView"
@@ -36,7 +39,7 @@
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
-            <Frame Padding="0,0,0,10">              
+            <Frame Padding="0,5,0,5">              
               <StackLayout Padding="5,0,5,5" BackgroundColor="Accent">
                                         
                   <Label x:Name="TitleBlock"                       
@@ -62,7 +65,7 @@
                          Style="{DynamicResource CaptionStyle}"/>
                 </ContentView>
             
-              </StackLayout>              
+              </StackLayout>                              
             </Frame>
           </ViewCell>
         </DataTemplate>

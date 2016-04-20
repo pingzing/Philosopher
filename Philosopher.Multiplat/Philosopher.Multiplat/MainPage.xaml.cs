@@ -45,10 +45,25 @@ namespace Philosopher.Multiplat
             }
         }
 
+        private string _mostRecentServerResponse;
+        public string MostRecentServerResponse
+        {
+            get { return _mostRecentServerResponse; }
+            set
+            {
+                if (_mostRecentServerResponse != value)
+                {
+                    _mostRecentServerResponse = value;
+                    OnPropertyChanged(nameof(MostRecentServerResponse));
+                }
+            }
+        }
+
+
 
         public MainPage()
         {
-            DataService = new DataService();
+            DataService = new DataService("http://192.168.0.8", 3000);
             InitializeComponent();
             this.BindingContext = this;
         }
@@ -89,6 +104,7 @@ namespace Philosopher.Multiplat
             try
             {
                 string output = (await DataService.CallServerScript(item, _cts.Token)).Trim();
+                MostRecentServerResponse = output;
                 ScriptList.Remove(item);
                 ScriptList.Insert(index, item.WithOutput(output));
             }
