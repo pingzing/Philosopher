@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Acr.UserDialogs;
 
 namespace Philosopher.Multiplat.Windows
 {
@@ -19,8 +20,7 @@ namespace Philosopher.Multiplat.Windows
     {
         public MainPage()
         {
-            this.InitializeComponent();
-
+            this.InitializeComponent();            
             LoadApplication(new Philosopher.Multiplat.App());
         }
     }

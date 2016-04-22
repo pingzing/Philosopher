@@ -2,76 +2,109 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Philosopher.Multiplat.MainPage"
-             Appearing="MainPage_OnAppearing"
+             xmlns:conv="clr-namespace:Philosopher.Multiplat.Converters;assembly=Philosopher.Multiplat"
+             xmlns:userdialogs="clr-namespace:Acr.UserDialogs;assembly=Acr.UserDialogs.Interface"                          
              Padding="10">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>      
+      <conv:BoolNegationConverter x:Key="BoolNegationConverter"/>   
+      <userdialogs:PromptConfig x:Name="HostnamePromptConfig" x:Key="HostnamePromptConfig" 
+                                Title="Enter server info"
+                                Message="Enter the server's hostname and (optionally) port number."
+                                Placeholder="Hostname"/>
+    <conv:TrueIfGrEqualConverter x:Key="TrueIfGrEqualConverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+
   <Grid RowSpacing="10">
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
-      <RowDefinition/>
+      <RowDefinition x:Name="ResponseRow" Height="{Binding ServerResponseBlockHeight}"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
-    
+
     <StackLayout Grid.Row="0">
       <Label x:Name="HeaderLabel"
              Style="{DynamicResource TitleStyle}"
              Text="Scripts"/>
-      
+
       <Label x:Name="ConnectedToLabel"
               Style="{DynamicResource SubtitleStyle}"
-              Text="Connected to: "/>      
-      
-      <Button x:Name="ConnectedToLink"
+              Text="Connected to: "/>
+
+      <Button x:Name="ConnectedToLink"              
               Text="{Binding DataService.BaseUrl}"
               BackgroundColor="Transparent"
-              BorderWidth="0"
-              Clicked="ConnectedToLink_OnClicked"/>      
-    
-    <Label x:Name="ResponseLabel"
-           Style="{DynamicResource ListItemTextStyle}"
-           Text="{Binding MostRecentServerResponse}"/>
+              BorderWidth="0"/>      
     </StackLayout>
     
+    <ScrollView Grid.Row="1">
+        <Label x:Name="ResponseLabel"  
+               Height="{Binding ResponseLabelHeight, Mode=TwoWay}"
+               Style="{DynamicResource ListItemTextStyle}"
+               Text="{Binding MostRecentServerResponse}"/>
+        </ScrollView>
+      
+      <Button x:Name="ExpandHideButton"
+              Grid.Row="2"
+              Text="Expand/Hide"
+              Clicked="ExpandHideButton_OnClicked"
+              IsVisible="{Binding ResponseLabelHeight, Converter={StaticResource TrueIfGrEqualConverter}, ConverterParameter=26}"/>
+
     <ListView x:Name="ScriptsListView"
-              Grid.Row="1"
+              Grid.Row="3"
               ItemsSource="{Binding ScriptList}"
               ItemTapped="ScriptsListView_OnItemTapped"
-              HasUnevenRows="True"
-              RowHeight="-1">
+              HasUnevenRows="True">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
-            <Frame Padding="0,5,0,5">              
-              <StackLayout Padding="5,0,5,5" BackgroundColor="Accent">
-                                        
-                  <Label x:Name="TitleBlock"                       
+            <Grid>
+              <Frame Padding="0,5,0,5">
+                <Grid Padding="5,0,5,5" BackgroundColor="Gray">
+                  <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                  </Grid.RowDefinitions>
+
+                  <Label x:Name="TitleBlock"
+                         Grid.Row="0"
                          LineBreakMode="CharacterWrap"
                          Text="{Binding Name}"
                          TextColor="White"
                          Style="{DynamicResource BodyStyle}"
-                         FontAttributes="Bold"/>     
-                
-                <Label x:Name="ResponseBlock"
-                       LineBreakMode="WordWrap"
-                       Text="{Binding LastServerResponse}"
-                       TextColor="White"
-                       Style="{DynamicResource BodyStyle}"
-                       FontAttributes="Italic"
-                       IsVisible="{Binding ShouldShow}"/>
-              
-                <ContentView Padding="0, 5, 0, 0">
-                  <Label x:Name="TypeBlock"                       
-                         LineBreakMode="CharacterWrap"
-                         Text="{Binding ScriptKind}"
-                         TextColor="White"                       
-                         Style="{DynamicResource CaptionStyle}"/>
-                </ContentView>
-            
-              </StackLayout>                              
-            </Frame>
+                         FontAttributes="Bold"
+                         IsVisible="{Binding ShouldShow, Converter={StaticResource BoolNegationConverter}}"/>
+
+                  <Label x:Name="ResponseBlock"
+                         Grid.Row="0"
+                         LineBreakMode="WordWrap"
+                         Text="{Binding LastServerResponse}"
+                         TextColor="White"
+                         Style="{DynamicResource BodyStyle}"
+                         FontAttributes="Italic"
+                         IsVisible="{Binding ShouldShow}"/>
+
+                  <ContentView Padding="0, 5, 0, 0" Grid.Row="1">
+                    <Label x:Name="TypeBlock"
+                           LineBreakMode="CharacterWrap"
+                           Text="{Binding ScriptKind}"
+                           TextColor="White"
+                           Style="{DynamicResource CaptionStyle}"/>
+                  </ContentView>
+
+                </Grid>
+              </Frame>
+              <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}" Color="Accent"/>
+            </Grid>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
-      
+
     </ListView>
-    
+
   </Grid>
 </ContentPage>

@@ -26,1464 +26,47 @@ namespace Philosopher.Multiplat.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_fade_in = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_fade_in;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_fade_out = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_fade_out;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_grow_fade_in_from_bottom = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_popup_enter = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_popup_enter;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_popup_exit = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_popup_exit;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_slide_in_bottom = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_slide_in_bottom;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_slide_in_top = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_slide_in_top;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_slide_out_bottom = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_slide_out_bottom;
-			global::Xamarin.Forms.Platform.Resource.Animation.abc_slide_out_top = global::Philosopher.Multiplat.Droid.Resource.Animation.abc_slide_out_top;
-			global::Xamarin.Forms.Platform.Resource.Animation.design_fab_in = global::Philosopher.Multiplat.Droid.Resource.Animation.design_fab_in;
-			global::Xamarin.Forms.Platform.Resource.Animation.design_fab_out = global::Philosopher.Multiplat.Droid.Resource.Animation.design_fab_out;
-			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_in = global::Philosopher.Multiplat.Droid.Resource.Animation.design_snackbar_in;
-			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_out = global::Philosopher.Multiplat.Droid.Resource.Animation.design_snackbar_out;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarDivider = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarDivider;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarItemBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarItemBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarPopupTheme = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarPopupTheme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarSize = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarSize;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarSplitStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarSplitStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarTabBarStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarTabBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarTabStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarTabStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarTabTextStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarTabTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarTheme = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarTheme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionBarWidgetTheme = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarWidgetTheme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionDropDownStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionDropDownStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionMenuTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionMenuTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionMenuTextColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionMenuTextColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeCloseButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeCloseDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeCloseDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeCopyDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeCopyDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeCutDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeCutDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeFindDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeFindDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModePasteDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModePasteDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModePopupWindowStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModePopupWindowStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeSelectAllDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeShareDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeShareDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeSplitBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeSplitBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionModeWebSearchDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionOverflowButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionOverflowButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionOverflowMenuStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionOverflowMenuStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionProviderClass = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionProviderClass;
-			global::Xamarin.Forms.Platform.Resource.Attribute.actionViewClass = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionViewClass;
-			global::Xamarin.Forms.Platform.Resource.Attribute.activityChooserViewStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.alertDialogButtonGroupStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.alertDialogCenterButtons = global::Philosopher.Multiplat.Droid.Resource.Attribute.alertDialogCenterButtons;
-			global::Xamarin.Forms.Platform.Resource.Attribute.alertDialogStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.alertDialogStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.alertDialogTheme = global::Philosopher.Multiplat.Droid.Resource.Attribute.alertDialogTheme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.arrowHeadLength = global::Philosopher.Multiplat.Droid.Resource.Attribute.arrowHeadLength;
-			global::Xamarin.Forms.Platform.Resource.Attribute.arrowShaftLength = global::Philosopher.Multiplat.Droid.Resource.Attribute.arrowShaftLength;
-			global::Xamarin.Forms.Platform.Resource.Attribute.autoCompleteTextViewStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.background = global::Philosopher.Multiplat.Droid.Resource.Attribute.background;
-			global::Xamarin.Forms.Platform.Resource.Attribute.backgroundSplit = global::Philosopher.Multiplat.Droid.Resource.Attribute.backgroundSplit;
-			global::Xamarin.Forms.Platform.Resource.Attribute.backgroundStacked = global::Philosopher.Multiplat.Droid.Resource.Attribute.backgroundStacked;
-			global::Xamarin.Forms.Platform.Resource.Attribute.backgroundTint = global::Philosopher.Multiplat.Droid.Resource.Attribute.backgroundTint;
-			global::Xamarin.Forms.Platform.Resource.Attribute.backgroundTintMode = global::Philosopher.Multiplat.Droid.Resource.Attribute.backgroundTintMode;
-			global::Xamarin.Forms.Platform.Resource.Attribute.barLength = global::Philosopher.Multiplat.Droid.Resource.Attribute.barLength;
-			global::Xamarin.Forms.Platform.Resource.Attribute.behavior_overlapTop = global::Philosopher.Multiplat.Droid.Resource.Attribute.behavior_overlapTop;
-			global::Xamarin.Forms.Platform.Resource.Attribute.borderWidth = global::Philosopher.Multiplat.Droid.Resource.Attribute.borderWidth;
-			global::Xamarin.Forms.Platform.Resource.Attribute.borderlessButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonBarButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarNegativeButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarNeutralButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarPositiveButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonPanelSideLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonPanelSideLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonStyleSmall = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonStyleSmall;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonTint = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonTint;
-			global::Xamarin.Forms.Platform.Resource.Attribute.buttonTintMode = global::Philosopher.Multiplat.Droid.Resource.Attribute.buttonTintMode;
-			global::Xamarin.Forms.Platform.Resource.Attribute.cardBackgroundColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.cardBackgroundColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.cardCornerRadius = global::Philosopher.Multiplat.Droid.Resource.Attribute.cardCornerRadius;
-			global::Xamarin.Forms.Platform.Resource.Attribute.cardElevation = global::Philosopher.Multiplat.Droid.Resource.Attribute.cardElevation;
-			global::Xamarin.Forms.Platform.Resource.Attribute.cardMaxElevation = global::Philosopher.Multiplat.Droid.Resource.Attribute.cardMaxElevation;
-			global::Xamarin.Forms.Platform.Resource.Attribute.cardPreventCornerOverlap = global::Philosopher.Multiplat.Droid.Resource.Attribute.cardPreventCornerOverlap;
-			global::Xamarin.Forms.Platform.Resource.Attribute.cardUseCompatPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.cardUseCompatPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.checkboxStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.checkboxStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.checkedTextViewStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.checkedTextViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.closeIcon = global::Philosopher.Multiplat.Droid.Resource.Attribute.closeIcon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.closeItemLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.closeItemLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.collapseContentDescription = global::Philosopher.Multiplat.Droid.Resource.Attribute.collapseContentDescription;
-			global::Xamarin.Forms.Platform.Resource.Attribute.collapseIcon = global::Philosopher.Multiplat.Droid.Resource.Attribute.collapseIcon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.collapsedTitleGravity = global::Philosopher.Multiplat.Droid.Resource.Attribute.collapsedTitleGravity;
-			global::Xamarin.Forms.Platform.Resource.Attribute.collapsedTitleTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.color = global::Philosopher.Multiplat.Droid.Resource.Attribute.color;
-			global::Xamarin.Forms.Platform.Resource.Attribute.colorAccent = global::Philosopher.Multiplat.Droid.Resource.Attribute.colorAccent;
-			global::Xamarin.Forms.Platform.Resource.Attribute.colorButtonNormal = global::Philosopher.Multiplat.Droid.Resource.Attribute.colorButtonNormal;
-			global::Xamarin.Forms.Platform.Resource.Attribute.colorControlActivated = global::Philosopher.Multiplat.Droid.Resource.Attribute.colorControlActivated;
-			global::Xamarin.Forms.Platform.Resource.Attribute.colorControlHighlight = global::Philosopher.Multiplat.Droid.Resource.Attribute.colorControlHighlight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.colorControlNormal = global::Philosopher.Multiplat.Droid.Resource.Attribute.colorControlNormal;
-			global::Xamarin.Forms.Platform.Resource.Attribute.colorPrimary = global::Philosopher.Multiplat.Droid.Resource.Attribute.colorPrimary;
-			global::Xamarin.Forms.Platform.Resource.Attribute.colorPrimaryDark = global::Philosopher.Multiplat.Droid.Resource.Attribute.colorPrimaryDark;
-			global::Xamarin.Forms.Platform.Resource.Attribute.colorSwitchThumbNormal = global::Philosopher.Multiplat.Droid.Resource.Attribute.colorSwitchThumbNormal;
-			global::Xamarin.Forms.Platform.Resource.Attribute.commitIcon = global::Philosopher.Multiplat.Droid.Resource.Attribute.commitIcon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentInsetEnd = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentInsetEnd;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentInsetLeft = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentInsetLeft;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentInsetRight = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentInsetRight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentInsetStart = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentInsetStart;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentPaddingBottom = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentPaddingBottom;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentPaddingLeft = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentPaddingLeft;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentPaddingRight = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentPaddingRight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentPaddingTop = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentPaddingTop;
-			global::Xamarin.Forms.Platform.Resource.Attribute.contentScrim = global::Philosopher.Multiplat.Droid.Resource.Attribute.contentScrim;
-			global::Xamarin.Forms.Platform.Resource.Attribute.controlBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.controlBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.customNavigationLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.customNavigationLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.defaultQueryHint = global::Philosopher.Multiplat.Droid.Resource.Attribute.defaultQueryHint;
-			global::Xamarin.Forms.Platform.Resource.Attribute.dialogPreferredPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.dialogPreferredPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.dialogTheme = global::Philosopher.Multiplat.Droid.Resource.Attribute.dialogTheme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.displayOptions = global::Philosopher.Multiplat.Droid.Resource.Attribute.displayOptions;
-			global::Xamarin.Forms.Platform.Resource.Attribute.divider = global::Philosopher.Multiplat.Droid.Resource.Attribute.divider;
-			global::Xamarin.Forms.Platform.Resource.Attribute.dividerHorizontal = global::Philosopher.Multiplat.Droid.Resource.Attribute.dividerHorizontal;
-			global::Xamarin.Forms.Platform.Resource.Attribute.dividerPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.dividerPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.dividerVertical = global::Philosopher.Multiplat.Droid.Resource.Attribute.dividerVertical;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawableSize = global::Philosopher.Multiplat.Droid.Resource.Attribute.drawableSize;
-			global::Xamarin.Forms.Platform.Resource.Attribute.drawerArrowStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.dropDownListViewStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.dropdownListPreferredItemHeight = global::Philosopher.Multiplat.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.editTextBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.editTextBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.editTextColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.editTextColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.editTextStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.editTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.elevation = global::Philosopher.Multiplat.Droid.Resource.Attribute.elevation;
-			global::Xamarin.Forms.Platform.Resource.Attribute.errorEnabled = global::Philosopher.Multiplat.Droid.Resource.Attribute.errorEnabled;
-			global::Xamarin.Forms.Platform.Resource.Attribute.errorTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.errorTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Philosopher.Multiplat.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expanded = global::Philosopher.Multiplat.Droid.Resource.Attribute.expanded;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expandedTitleGravity = global::Philosopher.Multiplat.Droid.Resource.Attribute.expandedTitleGravity;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expandedTitleMargin = global::Philosopher.Multiplat.Droid.Resource.Attribute.expandedTitleMargin;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expandedTitleMarginBottom = global::Philosopher.Multiplat.Droid.Resource.Attribute.expandedTitleMarginBottom;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expandedTitleMarginEnd = global::Philosopher.Multiplat.Droid.Resource.Attribute.expandedTitleMarginEnd;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expandedTitleMarginStart = global::Philosopher.Multiplat.Droid.Resource.Attribute.expandedTitleMarginStart;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expandedTitleMarginTop = global::Philosopher.Multiplat.Droid.Resource.Attribute.expandedTitleMarginTop;
-			global::Xamarin.Forms.Platform.Resource.Attribute.expandedTitleTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.fabSize = global::Philosopher.Multiplat.Droid.Resource.Attribute.fabSize;
-			global::Xamarin.Forms.Platform.Resource.Attribute.gapBetweenBars = global::Philosopher.Multiplat.Droid.Resource.Attribute.gapBetweenBars;
-			global::Xamarin.Forms.Platform.Resource.Attribute.goIcon = global::Philosopher.Multiplat.Droid.Resource.Attribute.goIcon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.headerLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.headerLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.height = global::Philosopher.Multiplat.Droid.Resource.Attribute.height;
-			global::Xamarin.Forms.Platform.Resource.Attribute.hideOnContentScroll = global::Philosopher.Multiplat.Droid.Resource.Attribute.hideOnContentScroll;
-			global::Xamarin.Forms.Platform.Resource.Attribute.hintAnimationEnabled = global::Philosopher.Multiplat.Droid.Resource.Attribute.hintAnimationEnabled;
-			global::Xamarin.Forms.Platform.Resource.Attribute.hintTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.hintTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.homeAsUpIndicator = global::Philosopher.Multiplat.Droid.Resource.Attribute.homeAsUpIndicator;
-			global::Xamarin.Forms.Platform.Resource.Attribute.homeLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.homeLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.icon = global::Philosopher.Multiplat.Droid.Resource.Attribute.icon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.iconifiedByDefault = global::Philosopher.Multiplat.Droid.Resource.Attribute.iconifiedByDefault;
-			global::Xamarin.Forms.Platform.Resource.Attribute.indeterminateProgressStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.initialActivityCount = global::Philosopher.Multiplat.Droid.Resource.Attribute.initialActivityCount;
-			global::Xamarin.Forms.Platform.Resource.Attribute.insetForeground = global::Philosopher.Multiplat.Droid.Resource.Attribute.insetForeground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.isLightTheme = global::Philosopher.Multiplat.Droid.Resource.Attribute.isLightTheme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.itemBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.itemBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.itemIconTint = global::Philosopher.Multiplat.Droid.Resource.Attribute.itemIconTint;
-			global::Xamarin.Forms.Platform.Resource.Attribute.itemPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.itemPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.itemTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.itemTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.itemTextColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.itemTextColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.keylines = global::Philosopher.Multiplat.Droid.Resource.Attribute.keylines;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout_anchor = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout_anchor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout_anchorGravity = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout_anchorGravity;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout_behavior = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout_behavior;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout_collapseMode = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout_collapseMode;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout_collapseParallaxMultiplier = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout_keyline = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout_keyline;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout_scrollFlags = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout_scrollFlags;
-			global::Xamarin.Forms.Platform.Resource.Attribute.layout_scrollInterpolator = global::Philosopher.Multiplat.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceBackgroundIndicator = global::Philosopher.Multiplat.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listDividerAlertDialog = global::Philosopher.Multiplat.Droid.Resource.Attribute.listDividerAlertDialog;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listItemLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.listItemLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.listLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listPopupWindowStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.listPopupWindowStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeight = global::Philosopher.Multiplat.Droid.Resource.Attribute.listPreferredItemHeight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeightLarge = global::Philosopher.Multiplat.Droid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeightSmall = global::Philosopher.Multiplat.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingLeft = global::Philosopher.Multiplat.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingRight = global::Philosopher.Multiplat.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.logo = global::Philosopher.Multiplat.Droid.Resource.Attribute.logo;
-			global::Xamarin.Forms.Platform.Resource.Attribute.logoDescription = global::Philosopher.Multiplat.Droid.Resource.Attribute.logoDescription;
-			global::Xamarin.Forms.Platform.Resource.Attribute.maxActionInlineWidth = global::Philosopher.Multiplat.Droid.Resource.Attribute.maxActionInlineWidth;
-			global::Xamarin.Forms.Platform.Resource.Attribute.maxButtonHeight = global::Philosopher.Multiplat.Droid.Resource.Attribute.maxButtonHeight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.measureWithLargestChild = global::Philosopher.Multiplat.Droid.Resource.Attribute.measureWithLargestChild;
-			global::Xamarin.Forms.Platform.Resource.Attribute.menu = global::Philosopher.Multiplat.Droid.Resource.Attribute.menu;
-			global::Xamarin.Forms.Platform.Resource.Attribute.multiChoiceItemLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.navigationContentDescription = global::Philosopher.Multiplat.Droid.Resource.Attribute.navigationContentDescription;
-			global::Xamarin.Forms.Platform.Resource.Attribute.navigationIcon = global::Philosopher.Multiplat.Droid.Resource.Attribute.navigationIcon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.navigationMode = global::Philosopher.Multiplat.Droid.Resource.Attribute.navigationMode;
-			global::Xamarin.Forms.Platform.Resource.Attribute.overlapAnchor = global::Philosopher.Multiplat.Droid.Resource.Attribute.overlapAnchor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.paddingEnd = global::Philosopher.Multiplat.Droid.Resource.Attribute.paddingEnd;
-			global::Xamarin.Forms.Platform.Resource.Attribute.paddingStart = global::Philosopher.Multiplat.Droid.Resource.Attribute.paddingStart;
-			global::Xamarin.Forms.Platform.Resource.Attribute.panelBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.panelBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.panelMenuListTheme = global::Philosopher.Multiplat.Droid.Resource.Attribute.panelMenuListTheme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.panelMenuListWidth = global::Philosopher.Multiplat.Droid.Resource.Attribute.panelMenuListWidth;
-			global::Xamarin.Forms.Platform.Resource.Attribute.popupMenuStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.popupMenuStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.popupTheme = global::Philosopher.Multiplat.Droid.Resource.Attribute.popupTheme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.popupWindowStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.popupWindowStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.preserveIconSpacing = global::Philosopher.Multiplat.Droid.Resource.Attribute.preserveIconSpacing;
-			global::Xamarin.Forms.Platform.Resource.Attribute.pressedTranslationZ = global::Philosopher.Multiplat.Droid.Resource.Attribute.pressedTranslationZ;
-			global::Xamarin.Forms.Platform.Resource.Attribute.progressBarPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.progressBarPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.progressBarStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.progressBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.queryBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.queryBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.queryHint = global::Philosopher.Multiplat.Droid.Resource.Attribute.queryHint;
-			global::Xamarin.Forms.Platform.Resource.Attribute.radioButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.radioButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.ratingBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.rippleColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.rippleColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.searchHintIcon = global::Philosopher.Multiplat.Droid.Resource.Attribute.searchHintIcon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.searchIcon = global::Philosopher.Multiplat.Droid.Resource.Attribute.searchIcon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.searchViewStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.searchViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.selectableItemBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.selectableItemBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.selectableItemBackgroundBorderless = global::Philosopher.Multiplat.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Xamarin.Forms.Platform.Resource.Attribute.showAsAction = global::Philosopher.Multiplat.Droid.Resource.Attribute.showAsAction;
-			global::Xamarin.Forms.Platform.Resource.Attribute.showDividers = global::Philosopher.Multiplat.Droid.Resource.Attribute.showDividers;
-			global::Xamarin.Forms.Platform.Resource.Attribute.showText = global::Philosopher.Multiplat.Droid.Resource.Attribute.showText;
-			global::Xamarin.Forms.Platform.Resource.Attribute.singleChoiceItemLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.singleChoiceItemLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.spinBars = global::Philosopher.Multiplat.Droid.Resource.Attribute.spinBars;
-			global::Xamarin.Forms.Platform.Resource.Attribute.spinnerDropDownItemStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.spinnerStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.spinnerStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.splitTrack = global::Philosopher.Multiplat.Droid.Resource.Attribute.splitTrack;
-			global::Xamarin.Forms.Platform.Resource.Attribute.state_above_anchor = global::Philosopher.Multiplat.Droid.Resource.Attribute.state_above_anchor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.statusBarBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.statusBarBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.statusBarScrim = global::Philosopher.Multiplat.Droid.Resource.Attribute.statusBarScrim;
-			global::Xamarin.Forms.Platform.Resource.Attribute.submitBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.submitBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.subtitle = global::Philosopher.Multiplat.Droid.Resource.Attribute.subtitle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.subtitleTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.subtitleTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.subtitleTextColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.subtitleTextColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.subtitleTextStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.subtitleTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.suggestionRowLayout = global::Philosopher.Multiplat.Droid.Resource.Attribute.suggestionRowLayout;
-			global::Xamarin.Forms.Platform.Resource.Attribute.switchMinWidth = global::Philosopher.Multiplat.Droid.Resource.Attribute.switchMinWidth;
-			global::Xamarin.Forms.Platform.Resource.Attribute.switchPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.switchPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.switchStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.switchStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.switchTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.switchTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabBackground = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabBackground;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabContentStart = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabContentStart;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabGravity = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabGravity;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabIndicatorColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabIndicatorColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabIndicatorHeight = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabIndicatorHeight;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabMaxWidth = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabMaxWidth;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabMinWidth = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabMinWidth;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabMode = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabMode;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabPaddingBottom = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabPaddingBottom;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabPaddingEnd = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabPaddingEnd;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabPaddingStart = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabPaddingStart;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabPaddingTop = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabPaddingTop;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabSelectedTextColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabSelectedTextColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.tabTextColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.tabTextColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textAllCaps = global::Philosopher.Multiplat.Droid.Resource.Attribute.textAllCaps;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textAppearanceLargePopupMenu = global::Philosopher.Multiplat.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textAppearanceListItem = global::Philosopher.Multiplat.Droid.Resource.Attribute.textAppearanceListItem;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textAppearanceListItemSmall = global::Philosopher.Multiplat.Droid.Resource.Attribute.textAppearanceListItemSmall;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Philosopher.Multiplat.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textAppearanceSearchResultTitle = global::Philosopher.Multiplat.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textAppearanceSmallPopupMenu = global::Philosopher.Multiplat.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textColorAlertDialogListItem = global::Philosopher.Multiplat.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::Xamarin.Forms.Platform.Resource.Attribute.textColorSearchUrl = global::Philosopher.Multiplat.Droid.Resource.Attribute.textColorSearchUrl;
-			global::Xamarin.Forms.Platform.Resource.Attribute.theme = global::Philosopher.Multiplat.Droid.Resource.Attribute.theme;
-			global::Xamarin.Forms.Platform.Resource.Attribute.thickness = global::Philosopher.Multiplat.Droid.Resource.Attribute.thickness;
-			global::Xamarin.Forms.Platform.Resource.Attribute.thumbTextPadding = global::Philosopher.Multiplat.Droid.Resource.Attribute.thumbTextPadding;
-			global::Xamarin.Forms.Platform.Resource.Attribute.title = global::Philosopher.Multiplat.Droid.Resource.Attribute.title;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleEnabled = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleEnabled;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleMarginBottom = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleMarginBottom;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleMarginEnd = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleMarginEnd;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleMarginStart = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleMarginStart;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleMarginTop = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleMarginTop;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleMargins = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleMargins;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleTextColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleTextColor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.titleTextStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.titleTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.toolbarId = global::Philosopher.Multiplat.Droid.Resource.Attribute.toolbarId;
-			global::Xamarin.Forms.Platform.Resource.Attribute.toolbarNavigationButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.toolbarStyle = global::Philosopher.Multiplat.Droid.Resource.Attribute.toolbarStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.track = global::Philosopher.Multiplat.Droid.Resource.Attribute.track;
-			global::Xamarin.Forms.Platform.Resource.Attribute.voiceIcon = global::Philosopher.Multiplat.Droid.Resource.Attribute.voiceIcon;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowActionBar = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowActionBar;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowActionBarOverlay = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowActionBarOverlay;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowActionModeOverlay = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowActionModeOverlay;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowFixedHeightMajor = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowFixedHeightMajor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowFixedHeightMinor = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowFixedHeightMinor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowFixedWidthMajor = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowFixedWidthMajor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowFixedWidthMinor = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowFixedWidthMinor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowMinWidthMajor = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowMinWidthMajor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowMinWidthMinor = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowMinWidthMinor;
-			global::Xamarin.Forms.Platform.Resource.Attribute.windowNoTitle = global::Philosopher.Multiplat.Droid.Resource.Attribute.windowNoTitle;
-			global::Xamarin.Forms.Platform.Resource.Boolean.abc_action_bar_embed_tabs = global::Philosopher.Multiplat.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Xamarin.Forms.Platform.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::Philosopher.Multiplat.Droid.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
-			global::Xamarin.Forms.Platform.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::Philosopher.Multiplat.Droid.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
-			global::Xamarin.Forms.Platform.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Philosopher.Multiplat.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Xamarin.Forms.Platform.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::Philosopher.Multiplat.Droid.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
-			global::Xamarin.Forms.Platform.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Philosopher.Multiplat.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Xamarin.Forms.Platform.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Philosopher.Multiplat.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_background_cache_hint_selector_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_color_highlight_material = global::Philosopher.Multiplat.Droid.Resource.Color.abc_color_highlight_material;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_input_method_navigation_guard = global::Philosopher.Multiplat.Droid.Resource.Color.abc_input_method_navigation_guard;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_disable_only_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_disable_only_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.abc_primary_text_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.abc_primary_text_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_search_url_text = global::Philosopher.Multiplat.Droid.Resource.Color.abc_search_url_text;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_search_url_text_normal = global::Philosopher.Multiplat.Droid.Resource.Color.abc_search_url_text_normal;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_search_url_text_pressed = global::Philosopher.Multiplat.Droid.Resource.Color.abc_search_url_text_pressed;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_search_url_text_selected = global::Philosopher.Multiplat.Droid.Resource.Color.abc_search_url_text_selected;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_secondary_text_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.abc_secondary_text_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_secondary_text_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.abc_secondary_text_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.accent_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.accent_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.accent_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.accent_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.background_floating_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.background_floating_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.background_floating_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.background_floating_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.background_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.background_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.background_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.background_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.bright_foreground_disabled_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.bright_foreground_disabled_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.bright_foreground_disabled_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.bright_foreground_inverse_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.bright_foreground_inverse_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.bright_foreground_inverse_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.bright_foreground_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.bright_foreground_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.bright_foreground_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.bright_foreground_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.button_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.button_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.button_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.button_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.cardview_dark_background = global::Philosopher.Multiplat.Droid.Resource.Color.cardview_dark_background;
-			global::Xamarin.Forms.Platform.Resource.Color.cardview_light_background = global::Philosopher.Multiplat.Droid.Resource.Color.cardview_light_background;
-			global::Xamarin.Forms.Platform.Resource.Color.cardview_shadow_end_color = global::Philosopher.Multiplat.Droid.Resource.Color.cardview_shadow_end_color;
-			global::Xamarin.Forms.Platform.Resource.Color.cardview_shadow_start_color = global::Philosopher.Multiplat.Droid.Resource.Color.cardview_shadow_start_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_fab_shadow_end_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_fab_shadow_end_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_fab_shadow_mid_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_fab_shadow_mid_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_fab_shadow_start_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_fab_shadow_start_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_fab_stroke_end_inner_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_fab_stroke_end_outer_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_fab_stroke_top_inner_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_fab_stroke_top_outer_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_snackbar_background_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_snackbar_background_color;
-			global::Xamarin.Forms.Platform.Resource.Color.design_textinput_error_color = global::Philosopher.Multiplat.Droid.Resource.Color.design_textinput_error_color;
-			global::Xamarin.Forms.Platform.Resource.Color.dim_foreground_disabled_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.dim_foreground_disabled_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.dim_foreground_disabled_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.dim_foreground_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.dim_foreground_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.dim_foreground_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.dim_foreground_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.foreground_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.foreground_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.foreground_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.foreground_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.highlighted_text_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.highlighted_text_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.highlighted_text_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.highlighted_text_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.hint_foreground_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.hint_foreground_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.hint_foreground_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.hint_foreground_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.material_blue_grey_800 = global::Philosopher.Multiplat.Droid.Resource.Color.material_blue_grey_800;
-			global::Xamarin.Forms.Platform.Resource.Color.material_blue_grey_900 = global::Philosopher.Multiplat.Droid.Resource.Color.material_blue_grey_900;
-			global::Xamarin.Forms.Platform.Resource.Color.material_blue_grey_950 = global::Philosopher.Multiplat.Droid.Resource.Color.material_blue_grey_950;
-			global::Xamarin.Forms.Platform.Resource.Color.material_deep_teal_200 = global::Philosopher.Multiplat.Droid.Resource.Color.material_deep_teal_200;
-			global::Xamarin.Forms.Platform.Resource.Color.material_deep_teal_500 = global::Philosopher.Multiplat.Droid.Resource.Color.material_deep_teal_500;
-			global::Xamarin.Forms.Platform.Resource.Color.material_grey_100 = global::Philosopher.Multiplat.Droid.Resource.Color.material_grey_100;
-			global::Xamarin.Forms.Platform.Resource.Color.material_grey_300 = global::Philosopher.Multiplat.Droid.Resource.Color.material_grey_300;
-			global::Xamarin.Forms.Platform.Resource.Color.material_grey_50 = global::Philosopher.Multiplat.Droid.Resource.Color.material_grey_50;
-			global::Xamarin.Forms.Platform.Resource.Color.material_grey_600 = global::Philosopher.Multiplat.Droid.Resource.Color.material_grey_600;
-			global::Xamarin.Forms.Platform.Resource.Color.material_grey_800 = global::Philosopher.Multiplat.Droid.Resource.Color.material_grey_800;
-			global::Xamarin.Forms.Platform.Resource.Color.material_grey_850 = global::Philosopher.Multiplat.Droid.Resource.Color.material_grey_850;
-			global::Xamarin.Forms.Platform.Resource.Color.material_grey_900 = global::Philosopher.Multiplat.Droid.Resource.Color.material_grey_900;
-			global::Xamarin.Forms.Platform.Resource.Color.primary_dark_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.primary_dark_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.primary_dark_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.primary_dark_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.primary_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.primary_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.primary_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.primary_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.primary_text_default_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.primary_text_default_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.primary_text_default_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.primary_text_default_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.primary_text_disabled_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.primary_text_disabled_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.primary_text_disabled_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.primary_text_disabled_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.ripple_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.ripple_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.ripple_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.ripple_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.secondary_text_default_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.secondary_text_default_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.secondary_text_default_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.secondary_text_disabled_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.secondary_text_disabled_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.secondary_text_disabled_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.secondary_text_disabled_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.switch_thumb_disabled_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.switch_thumb_disabled_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.switch_thumb_disabled_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.switch_thumb_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.switch_thumb_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.switch_thumb_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.switch_thumb_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.switch_thumb_normal_material_dark = global::Philosopher.Multiplat.Droid.Resource.Color.switch_thumb_normal_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Color.switch_thumb_normal_material_light = global::Philosopher.Multiplat.Droid.Resource.Color.switch_thumb_normal_material_light;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_content_inset_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_default_height_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_progress_bar_size = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_stacked_max_height = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_button_min_height_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_button_min_height_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_button_min_width_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_button_min_width_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_button_inset_horizontal_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_button_inset_vertical_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_button_padding_horizontal_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_button_padding_vertical_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_config_prefDialogWidth = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_control_corner_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_control_corner_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_control_inset_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_control_inset_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_control_padding_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_control_padding_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_dialog_list_padding_vertical_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_dialog_min_width_major = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_dialog_min_width_major;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_dialog_min_width_minor = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_dialog_padding_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_dialog_padding_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_dialog_padding_top_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_disabled_alpha_material_dark = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_disabled_alpha_material_light = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_dropdownitem_icon_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_top_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_floating_window_z = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_floating_window_z;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_panel_menu_list_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_panel_menu_list_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_search_view_preferred_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_search_view_text_min_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_search_view_text_min_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_switch_padding = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_switch_padding;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_body_1_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_body_1_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_body_2_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_body_2_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_button_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_button_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_caption_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_caption_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_display_1_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_display_1_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_display_2_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_display_2_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_display_3_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_display_3_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_display_4_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_display_4_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_headline_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_headline_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_large_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_large_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_medium_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_medium_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_menu_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_menu_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_small_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_small_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_subhead_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_subhead_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_title_material = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_title_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_text_size_title_material_toolbar = global::Philosopher.Multiplat.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::Xamarin.Forms.Platform.Resource.Dimension.cardview_compat_inset_shadow = global::Philosopher.Multiplat.Droid.Resource.Dimension.cardview_compat_inset_shadow;
-			global::Xamarin.Forms.Platform.Resource.Dimension.cardview_default_elevation = global::Philosopher.Multiplat.Droid.Resource.Dimension.cardview_default_elevation;
-			global::Xamarin.Forms.Platform.Resource.Dimension.cardview_default_radius = global::Philosopher.Multiplat.Droid.Resource.Dimension.cardview_default_radius;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_appbar_elevation = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_appbar_elevation;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_fab_border_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_fab_border_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_fab_content_size = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_fab_content_size;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_fab_elevation = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_fab_elevation;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_fab_size_mini = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_fab_size_mini;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_fab_size_normal = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_fab_size_normal;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_fab_translation_z_pressed = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_navigation_elevation = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_navigation_elevation;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_navigation_icon_padding = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_navigation_icon_padding;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_navigation_icon_size = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_navigation_icon_size;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_navigation_max_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_navigation_max_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_navigation_padding_bottom = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_navigation_padding_bottom;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_navigation_padding_top_default = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_navigation_padding_top_default;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_navigation_separator_vertical_padding = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_action_inline_max_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_background_corner_radius = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_elevation = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_elevation;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_max_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_max_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_min_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_min_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_padding_horizontal = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_padding_vertical = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_snackbar_text_size = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_snackbar_text_size;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_tab_max_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_tab_max_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.design_tab_min_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.design_tab_min_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.dialog_fixed_height_major = global::Philosopher.Multiplat.Droid.Resource.Dimension.dialog_fixed_height_major;
-			global::Xamarin.Forms.Platform.Resource.Dimension.dialog_fixed_height_minor = global::Philosopher.Multiplat.Droid.Resource.Dimension.dialog_fixed_height_minor;
-			global::Xamarin.Forms.Platform.Resource.Dimension.dialog_fixed_width_major = global::Philosopher.Multiplat.Droid.Resource.Dimension.dialog_fixed_width_major;
-			global::Xamarin.Forms.Platform.Resource.Dimension.dialog_fixed_width_minor = global::Philosopher.Multiplat.Droid.Resource.Dimension.dialog_fixed_width_minor;
-			global::Xamarin.Forms.Platform.Resource.Dimension.disabled_alpha_material_dark = global::Philosopher.Multiplat.Droid.Resource.Dimension.disabled_alpha_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Dimension.disabled_alpha_material_light = global::Philosopher.Multiplat.Droid.Resource.Dimension.disabled_alpha_material_light;
-			global::Xamarin.Forms.Platform.Resource.Dimension.highlight_alpha_material_colored = global::Philosopher.Multiplat.Droid.Resource.Dimension.highlight_alpha_material_colored;
-			global::Xamarin.Forms.Platform.Resource.Dimension.highlight_alpha_material_dark = global::Philosopher.Multiplat.Droid.Resource.Dimension.highlight_alpha_material_dark;
-			global::Xamarin.Forms.Platform.Resource.Dimension.highlight_alpha_material_light = global::Philosopher.Multiplat.Droid.Resource.Dimension.highlight_alpha_material_light;
-			global::Xamarin.Forms.Platform.Resource.Dimension.notification_large_icon_height = global::Philosopher.Multiplat.Droid.Resource.Dimension.notification_large_icon_height;
-			global::Xamarin.Forms.Platform.Resource.Dimension.notification_large_icon_width = global::Philosopher.Multiplat.Droid.Resource.Dimension.notification_large_icon_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.notification_subtext_size = global::Philosopher.Multiplat.Droid.Resource.Dimension.notification_subtext_size;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_action_bar_item_background_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_borderless_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_borderless_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_check_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_colored_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_colored_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_default_mtrl_shape = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_cab_background_internal_bg = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_cab_background_top_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_cab_background_top_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_control_background_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_control_background_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_dialog_material_background_dark = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_dialog_material_background_dark;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_dialog_material_background_light = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_dialog_material_background_light;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_edit_text_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_edit_text_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_clear_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_item_background_holo_dark = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_item_background_holo_dark;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_item_background_holo_light = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_item_background_holo_light;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_focused_holo = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_focused_holo;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_longpressed_holo = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_longpressed_holo;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_pressed_holo_dark = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_pressed_holo_light = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_selector_holo_dark = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_list_selector_holo_light = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_list_selector_holo_light;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_popup_background_mtrl_mult = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_ratingbar_full_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_ratingbar_full_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_spinner_textfield_background_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_switch_thumb_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_switch_thumb_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_tab_indicator_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_tab_indicator_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_text_cursor_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_textfield_search_material = global::Philosopher.Multiplat.Droid.Resource.Drawable.abc_textfield_search_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.design_fab_background = global::Philosopher.Multiplat.Droid.Resource.Drawable.design_fab_background;
-			global::Xamarin.Forms.Platform.Resource.Drawable.design_snackbar_background = global::Philosopher.Multiplat.Droid.Resource.Drawable.design_snackbar_background;
-			global::Xamarin.Forms.Platform.Resource.Drawable.notification_template_icon_bg = global::Philosopher.Multiplat.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::Xamarin.Forms.Platform.Resource.Id.action0 = global::Philosopher.Multiplat.Droid.Resource.Id.action0;
-			global::Xamarin.Forms.Platform.Resource.Id.action_bar = global::Philosopher.Multiplat.Droid.Resource.Id.action_bar;
-			global::Xamarin.Forms.Platform.Resource.Id.action_bar_activity_content = global::Philosopher.Multiplat.Droid.Resource.Id.action_bar_activity_content;
-			global::Xamarin.Forms.Platform.Resource.Id.action_bar_container = global::Philosopher.Multiplat.Droid.Resource.Id.action_bar_container;
-			global::Xamarin.Forms.Platform.Resource.Id.action_bar_root = global::Philosopher.Multiplat.Droid.Resource.Id.action_bar_root;
-			global::Xamarin.Forms.Platform.Resource.Id.action_bar_spinner = global::Philosopher.Multiplat.Droid.Resource.Id.action_bar_spinner;
-			global::Xamarin.Forms.Platform.Resource.Id.action_bar_subtitle = global::Philosopher.Multiplat.Droid.Resource.Id.action_bar_subtitle;
-			global::Xamarin.Forms.Platform.Resource.Id.action_bar_title = global::Philosopher.Multiplat.Droid.Resource.Id.action_bar_title;
-			global::Xamarin.Forms.Platform.Resource.Id.action_context_bar = global::Philosopher.Multiplat.Droid.Resource.Id.action_context_bar;
-			global::Xamarin.Forms.Platform.Resource.Id.action_divider = global::Philosopher.Multiplat.Droid.Resource.Id.action_divider;
-			global::Xamarin.Forms.Platform.Resource.Id.action_menu_divider = global::Philosopher.Multiplat.Droid.Resource.Id.action_menu_divider;
-			global::Xamarin.Forms.Platform.Resource.Id.action_menu_presenter = global::Philosopher.Multiplat.Droid.Resource.Id.action_menu_presenter;
-			global::Xamarin.Forms.Platform.Resource.Id.action_mode_bar = global::Philosopher.Multiplat.Droid.Resource.Id.action_mode_bar;
-			global::Xamarin.Forms.Platform.Resource.Id.action_mode_bar_stub = global::Philosopher.Multiplat.Droid.Resource.Id.action_mode_bar_stub;
-			global::Xamarin.Forms.Platform.Resource.Id.action_mode_close_button = global::Philosopher.Multiplat.Droid.Resource.Id.action_mode_close_button;
-			global::Xamarin.Forms.Platform.Resource.Id.activity_chooser_view_content = global::Philosopher.Multiplat.Droid.Resource.Id.activity_chooser_view_content;
-			global::Xamarin.Forms.Platform.Resource.Id.alertTitle = global::Philosopher.Multiplat.Droid.Resource.Id.alertTitle;
-			global::Xamarin.Forms.Platform.Resource.Id.always = global::Philosopher.Multiplat.Droid.Resource.Id.always;
-			global::Xamarin.Forms.Platform.Resource.Id.beginning = global::Philosopher.Multiplat.Droid.Resource.Id.beginning;
-			global::Xamarin.Forms.Platform.Resource.Id.bottom = global::Philosopher.Multiplat.Droid.Resource.Id.bottom;
-			global::Xamarin.Forms.Platform.Resource.Id.buttonPanel = global::Philosopher.Multiplat.Droid.Resource.Id.buttonPanel;
-			global::Xamarin.Forms.Platform.Resource.Id.cancel_action = global::Philosopher.Multiplat.Droid.Resource.Id.cancel_action;
-			global::Xamarin.Forms.Platform.Resource.Id.center = global::Philosopher.Multiplat.Droid.Resource.Id.center;
-			global::Xamarin.Forms.Platform.Resource.Id.center_horizontal = global::Philosopher.Multiplat.Droid.Resource.Id.center_horizontal;
-			global::Xamarin.Forms.Platform.Resource.Id.center_vertical = global::Philosopher.Multiplat.Droid.Resource.Id.center_vertical;
-			global::Xamarin.Forms.Platform.Resource.Id.checkbox = global::Philosopher.Multiplat.Droid.Resource.Id.checkbox;
-			global::Xamarin.Forms.Platform.Resource.Id.chronometer = global::Philosopher.Multiplat.Droid.Resource.Id.chronometer;
-			global::Xamarin.Forms.Platform.Resource.Id.clip_horizontal = global::Philosopher.Multiplat.Droid.Resource.Id.clip_horizontal;
-			global::Xamarin.Forms.Platform.Resource.Id.clip_vertical = global::Philosopher.Multiplat.Droid.Resource.Id.clip_vertical;
-			global::Xamarin.Forms.Platform.Resource.Id.collapseActionView = global::Philosopher.Multiplat.Droid.Resource.Id.collapseActionView;
-			global::Xamarin.Forms.Platform.Resource.Id.contentPanel = global::Philosopher.Multiplat.Droid.Resource.Id.contentPanel;
-			global::Xamarin.Forms.Platform.Resource.Id.custom = global::Philosopher.Multiplat.Droid.Resource.Id.custom;
-			global::Xamarin.Forms.Platform.Resource.Id.customPanel = global::Philosopher.Multiplat.Droid.Resource.Id.customPanel;
-			global::Xamarin.Forms.Platform.Resource.Id.decor_content_parent = global::Philosopher.Multiplat.Droid.Resource.Id.decor_content_parent;
-			global::Xamarin.Forms.Platform.Resource.Id.default_activity_button = global::Philosopher.Multiplat.Droid.Resource.Id.default_activity_button;
-			global::Xamarin.Forms.Platform.Resource.Id.disableHome = global::Philosopher.Multiplat.Droid.Resource.Id.disableHome;
-			global::Xamarin.Forms.Platform.Resource.Id.edit_query = global::Philosopher.Multiplat.Droid.Resource.Id.edit_query;
-			global::Xamarin.Forms.Platform.Resource.Id.end = global::Philosopher.Multiplat.Droid.Resource.Id.end;
-			global::Xamarin.Forms.Platform.Resource.Id.end_padder = global::Philosopher.Multiplat.Droid.Resource.Id.end_padder;
-			global::Xamarin.Forms.Platform.Resource.Id.enterAlways = global::Philosopher.Multiplat.Droid.Resource.Id.enterAlways;
-			global::Xamarin.Forms.Platform.Resource.Id.enterAlwaysCollapsed = global::Philosopher.Multiplat.Droid.Resource.Id.enterAlwaysCollapsed;
-			global::Xamarin.Forms.Platform.Resource.Id.exitUntilCollapsed = global::Philosopher.Multiplat.Droid.Resource.Id.exitUntilCollapsed;
-			global::Xamarin.Forms.Platform.Resource.Id.expand_activities_button = global::Philosopher.Multiplat.Droid.Resource.Id.expand_activities_button;
-			global::Xamarin.Forms.Platform.Resource.Id.expanded_menu = global::Philosopher.Multiplat.Droid.Resource.Id.expanded_menu;
-			global::Xamarin.Forms.Platform.Resource.Id.fill = global::Philosopher.Multiplat.Droid.Resource.Id.fill;
-			global::Xamarin.Forms.Platform.Resource.Id.fill_horizontal = global::Philosopher.Multiplat.Droid.Resource.Id.fill_horizontal;
-			global::Xamarin.Forms.Platform.Resource.Id.fill_vertical = global::Philosopher.Multiplat.Droid.Resource.Id.fill_vertical;
-			global::Xamarin.Forms.Platform.Resource.Id.@fixed = global::Philosopher.Multiplat.Droid.Resource.Id.@fixed;
-			global::Xamarin.Forms.Platform.Resource.Id.home = global::Philosopher.Multiplat.Droid.Resource.Id.home;
-			global::Xamarin.Forms.Platform.Resource.Id.homeAsUp = global::Philosopher.Multiplat.Droid.Resource.Id.homeAsUp;
-			global::Xamarin.Forms.Platform.Resource.Id.icon = global::Philosopher.Multiplat.Droid.Resource.Id.icon;
-			global::Xamarin.Forms.Platform.Resource.Id.ifRoom = global::Philosopher.Multiplat.Droid.Resource.Id.ifRoom;
-			global::Xamarin.Forms.Platform.Resource.Id.image = global::Philosopher.Multiplat.Droid.Resource.Id.image;
-			global::Xamarin.Forms.Platform.Resource.Id.info = global::Philosopher.Multiplat.Droid.Resource.Id.info;
-			global::Xamarin.Forms.Platform.Resource.Id.left = global::Philosopher.Multiplat.Droid.Resource.Id.left;
-			global::Xamarin.Forms.Platform.Resource.Id.line1 = global::Philosopher.Multiplat.Droid.Resource.Id.line1;
-			global::Xamarin.Forms.Platform.Resource.Id.line3 = global::Philosopher.Multiplat.Droid.Resource.Id.line3;
-			global::Xamarin.Forms.Platform.Resource.Id.listMode = global::Philosopher.Multiplat.Droid.Resource.Id.listMode;
-			global::Xamarin.Forms.Platform.Resource.Id.list_item = global::Philosopher.Multiplat.Droid.Resource.Id.list_item;
-			global::Xamarin.Forms.Platform.Resource.Id.media_actions = global::Philosopher.Multiplat.Droid.Resource.Id.media_actions;
-			global::Xamarin.Forms.Platform.Resource.Id.middle = global::Philosopher.Multiplat.Droid.Resource.Id.middle;
-			global::Xamarin.Forms.Platform.Resource.Id.mini = global::Philosopher.Multiplat.Droid.Resource.Id.mini;
-			global::Xamarin.Forms.Platform.Resource.Id.multiply = global::Philosopher.Multiplat.Droid.Resource.Id.multiply;
-			global::Xamarin.Forms.Platform.Resource.Id.never = global::Philosopher.Multiplat.Droid.Resource.Id.never;
-			global::Xamarin.Forms.Platform.Resource.Id.none = global::Philosopher.Multiplat.Droid.Resource.Id.none;
-			global::Xamarin.Forms.Platform.Resource.Id.normal = global::Philosopher.Multiplat.Droid.Resource.Id.normal;
-			global::Xamarin.Forms.Platform.Resource.Id.parallax = global::Philosopher.Multiplat.Droid.Resource.Id.parallax;
-			global::Xamarin.Forms.Platform.Resource.Id.parentPanel = global::Philosopher.Multiplat.Droid.Resource.Id.parentPanel;
-			global::Xamarin.Forms.Platform.Resource.Id.pin = global::Philosopher.Multiplat.Droid.Resource.Id.pin;
-			global::Xamarin.Forms.Platform.Resource.Id.progress_circular = global::Philosopher.Multiplat.Droid.Resource.Id.progress_circular;
-			global::Xamarin.Forms.Platform.Resource.Id.progress_horizontal = global::Philosopher.Multiplat.Droid.Resource.Id.progress_horizontal;
-			global::Xamarin.Forms.Platform.Resource.Id.radio = global::Philosopher.Multiplat.Droid.Resource.Id.radio;
-			global::Xamarin.Forms.Platform.Resource.Id.right = global::Philosopher.Multiplat.Droid.Resource.Id.right;
-			global::Xamarin.Forms.Platform.Resource.Id.screen = global::Philosopher.Multiplat.Droid.Resource.Id.screen;
-			global::Xamarin.Forms.Platform.Resource.Id.scroll = global::Philosopher.Multiplat.Droid.Resource.Id.scroll;
-			global::Xamarin.Forms.Platform.Resource.Id.scrollView = global::Philosopher.Multiplat.Droid.Resource.Id.scrollView;
-			global::Xamarin.Forms.Platform.Resource.Id.scrollable = global::Philosopher.Multiplat.Droid.Resource.Id.scrollable;
-			global::Xamarin.Forms.Platform.Resource.Id.search_badge = global::Philosopher.Multiplat.Droid.Resource.Id.search_badge;
-			global::Xamarin.Forms.Platform.Resource.Id.search_bar = global::Philosopher.Multiplat.Droid.Resource.Id.search_bar;
-			global::Xamarin.Forms.Platform.Resource.Id.search_button = global::Philosopher.Multiplat.Droid.Resource.Id.search_button;
-			global::Xamarin.Forms.Platform.Resource.Id.search_close_btn = global::Philosopher.Multiplat.Droid.Resource.Id.search_close_btn;
-			global::Xamarin.Forms.Platform.Resource.Id.search_edit_frame = global::Philosopher.Multiplat.Droid.Resource.Id.search_edit_frame;
-			global::Xamarin.Forms.Platform.Resource.Id.search_go_btn = global::Philosopher.Multiplat.Droid.Resource.Id.search_go_btn;
-			global::Xamarin.Forms.Platform.Resource.Id.search_mag_icon = global::Philosopher.Multiplat.Droid.Resource.Id.search_mag_icon;
-			global::Xamarin.Forms.Platform.Resource.Id.search_plate = global::Philosopher.Multiplat.Droid.Resource.Id.search_plate;
-			global::Xamarin.Forms.Platform.Resource.Id.search_src_text = global::Philosopher.Multiplat.Droid.Resource.Id.search_src_text;
-			global::Xamarin.Forms.Platform.Resource.Id.search_voice_btn = global::Philosopher.Multiplat.Droid.Resource.Id.search_voice_btn;
-			global::Xamarin.Forms.Platform.Resource.Id.select_dialog_listview = global::Philosopher.Multiplat.Droid.Resource.Id.select_dialog_listview;
-			global::Xamarin.Forms.Platform.Resource.Id.shortcut = global::Philosopher.Multiplat.Droid.Resource.Id.shortcut;
-			global::Xamarin.Forms.Platform.Resource.Id.showCustom = global::Philosopher.Multiplat.Droid.Resource.Id.showCustom;
-			global::Xamarin.Forms.Platform.Resource.Id.showHome = global::Philosopher.Multiplat.Droid.Resource.Id.showHome;
-			global::Xamarin.Forms.Platform.Resource.Id.showTitle = global::Philosopher.Multiplat.Droid.Resource.Id.showTitle;
-			global::Xamarin.Forms.Platform.Resource.Id.snackbar_action = global::Philosopher.Multiplat.Droid.Resource.Id.snackbar_action;
-			global::Xamarin.Forms.Platform.Resource.Id.snackbar_text = global::Philosopher.Multiplat.Droid.Resource.Id.snackbar_text;
-			global::Xamarin.Forms.Platform.Resource.Id.split_action_bar = global::Philosopher.Multiplat.Droid.Resource.Id.split_action_bar;
-			global::Xamarin.Forms.Platform.Resource.Id.src_atop = global::Philosopher.Multiplat.Droid.Resource.Id.src_atop;
-			global::Xamarin.Forms.Platform.Resource.Id.src_in = global::Philosopher.Multiplat.Droid.Resource.Id.src_in;
-			global::Xamarin.Forms.Platform.Resource.Id.src_over = global::Philosopher.Multiplat.Droid.Resource.Id.src_over;
-			global::Xamarin.Forms.Platform.Resource.Id.start = global::Philosopher.Multiplat.Droid.Resource.Id.start;
-			global::Xamarin.Forms.Platform.Resource.Id.status_bar_latest_event_content = global::Philosopher.Multiplat.Droid.Resource.Id.status_bar_latest_event_content;
-			global::Xamarin.Forms.Platform.Resource.Id.submit_area = global::Philosopher.Multiplat.Droid.Resource.Id.submit_area;
-			global::Xamarin.Forms.Platform.Resource.Id.tabMode = global::Philosopher.Multiplat.Droid.Resource.Id.tabMode;
-			global::Xamarin.Forms.Platform.Resource.Id.text = global::Philosopher.Multiplat.Droid.Resource.Id.text;
-			global::Xamarin.Forms.Platform.Resource.Id.text2 = global::Philosopher.Multiplat.Droid.Resource.Id.text2;
-			global::Xamarin.Forms.Platform.Resource.Id.textSpacerNoButtons = global::Philosopher.Multiplat.Droid.Resource.Id.textSpacerNoButtons;
-			global::Xamarin.Forms.Platform.Resource.Id.time = global::Philosopher.Multiplat.Droid.Resource.Id.time;
-			global::Xamarin.Forms.Platform.Resource.Id.title = global::Philosopher.Multiplat.Droid.Resource.Id.title;
-			global::Xamarin.Forms.Platform.Resource.Id.title_template = global::Philosopher.Multiplat.Droid.Resource.Id.title_template;
-			global::Xamarin.Forms.Platform.Resource.Id.top = global::Philosopher.Multiplat.Droid.Resource.Id.top;
-			global::Xamarin.Forms.Platform.Resource.Id.topPanel = global::Philosopher.Multiplat.Droid.Resource.Id.topPanel;
-			global::Xamarin.Forms.Platform.Resource.Id.up = global::Philosopher.Multiplat.Droid.Resource.Id.up;
-			global::Xamarin.Forms.Platform.Resource.Id.useLogo = global::Philosopher.Multiplat.Droid.Resource.Id.useLogo;
-			global::Xamarin.Forms.Platform.Resource.Id.view_offset_helper = global::Philosopher.Multiplat.Droid.Resource.Id.view_offset_helper;
-			global::Xamarin.Forms.Platform.Resource.Id.withText = global::Philosopher.Multiplat.Droid.Resource.Id.withText;
-			global::Xamarin.Forms.Platform.Resource.Id.wrap_content = global::Philosopher.Multiplat.Droid.Resource.Id.wrap_content;
-			global::Xamarin.Forms.Platform.Resource.Integer.abc_config_activityDefaultDur = global::Philosopher.Multiplat.Droid.Resource.Integer.abc_config_activityDefaultDur;
-			global::Xamarin.Forms.Platform.Resource.Integer.abc_config_activityShortDur = global::Philosopher.Multiplat.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::Xamarin.Forms.Platform.Resource.Integer.abc_max_action_buttons = global::Philosopher.Multiplat.Droid.Resource.Integer.abc_max_action_buttons;
-			global::Xamarin.Forms.Platform.Resource.Integer.cancel_button_image_alpha = global::Philosopher.Multiplat.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Xamarin.Forms.Platform.Resource.Integer.design_snackbar_text_max_lines = global::Philosopher.Multiplat.Droid.Resource.Integer.design_snackbar_text_max_lines;
-			global::Xamarin.Forms.Platform.Resource.Integer.status_bar_notification_info_maxnum = global::Philosopher.Multiplat.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_action_bar_title_item = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_action_bar_title_item;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_action_bar_up_container = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_action_bar_up_container;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_action_bar_view_list_nav_layout = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_action_menu_item_layout = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_action_menu_item_layout;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_action_menu_layout = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_action_menu_layout;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_action_mode_bar = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_action_mode_bar;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_action_mode_close_item_material = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_action_mode_close_item_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_activity_chooser_view = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_activity_chooser_view;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_activity_chooser_view_list_item = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_alert_dialog_material = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_alert_dialog_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_dialog_title_material = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_dialog_title_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_expanded_menu_layout = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_expanded_menu_layout;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_list_menu_item_checkbox = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_list_menu_item_icon = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_list_menu_item_icon;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_list_menu_item_layout = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_list_menu_item_layout;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_list_menu_item_radio = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_list_menu_item_radio;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_popup_menu_item_layout = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_popup_menu_item_layout;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_screen_content_include = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_screen_content_include;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_screen_simple = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_screen_simple;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_screen_toolbar = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_screen_toolbar;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_search_view = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_search_view;
-			global::Xamarin.Forms.Platform.Resource.Layout.abc_select_dialog_material = global::Philosopher.Multiplat.Droid.Resource.Layout.abc_select_dialog_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_snackbar = global::Philosopher.Multiplat.Droid.Resource.Layout.design_layout_snackbar;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_snackbar_include = global::Philosopher.Multiplat.Droid.Resource.Layout.design_layout_snackbar_include;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_tab_icon = global::Philosopher.Multiplat.Droid.Resource.Layout.design_layout_tab_icon;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_tab_text = global::Philosopher.Multiplat.Droid.Resource.Layout.design_layout_tab_text;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_item = global::Philosopher.Multiplat.Droid.Resource.Layout.design_navigation_item;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_item_header = global::Philosopher.Multiplat.Droid.Resource.Layout.design_navigation_item_header;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_item_separator = global::Philosopher.Multiplat.Droid.Resource.Layout.design_navigation_item_separator;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_item_subheader = global::Philosopher.Multiplat.Droid.Resource.Layout.design_navigation_item_subheader;
-			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu = global::Philosopher.Multiplat.Droid.Resource.Layout.design_navigation_menu;
-			global::Xamarin.Forms.Platform.Resource.Layout.notification_media_action = global::Philosopher.Multiplat.Droid.Resource.Layout.notification_media_action;
-			global::Xamarin.Forms.Platform.Resource.Layout.notification_media_cancel_action = global::Philosopher.Multiplat.Droid.Resource.Layout.notification_media_cancel_action;
-			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_big_media = global::Philosopher.Multiplat.Droid.Resource.Layout.notification_template_big_media;
-			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_big_media_narrow = global::Philosopher.Multiplat.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_lines = global::Philosopher.Multiplat.Droid.Resource.Layout.notification_template_lines;
-			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_media = global::Philosopher.Multiplat.Droid.Resource.Layout.notification_template_media;
-			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_part_chronometer = global::Philosopher.Multiplat.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_part_time = global::Philosopher.Multiplat.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_item_material = global::Philosopher.Multiplat.Droid.Resource.Layout.select_dialog_item_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_multichoice_material = global::Philosopher.Multiplat.Droid.Resource.Layout.select_dialog_multichoice_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_singlechoice_material = global::Philosopher.Multiplat.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.support_simple_spinner_dropdown_item = global::Philosopher.Multiplat.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			//global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::Philosopher.Multiplat.Droid.Resource.String.ApplicationName;
-			//global::Xamarin.Forms.Platform.Resource.String.Hello = global::Philosopher.Multiplat.Droid.Resource.String.Hello;
-			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_description = global::Philosopher.Multiplat.Droid.Resource.String.abc_action_bar_home_description;
-			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_description_format = global::Philosopher.Multiplat.Droid.Resource.String.abc_action_bar_home_description_format;
-			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_subtitle_description_format = global::Philosopher.Multiplat.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
-			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_up_description = global::Philosopher.Multiplat.Droid.Resource.String.abc_action_bar_up_description;
-			global::Xamarin.Forms.Platform.Resource.String.abc_action_menu_overflow_description = global::Philosopher.Multiplat.Droid.Resource.String.abc_action_menu_overflow_description;
-			global::Xamarin.Forms.Platform.Resource.String.abc_action_mode_done = global::Philosopher.Multiplat.Droid.Resource.String.abc_action_mode_done;
-			global::Xamarin.Forms.Platform.Resource.String.abc_activity_chooser_view_see_all = global::Philosopher.Multiplat.Droid.Resource.String.abc_activity_chooser_view_see_all;
-			global::Xamarin.Forms.Platform.Resource.String.abc_activitychooserview_choose_application = global::Philosopher.Multiplat.Droid.Resource.String.abc_activitychooserview_choose_application;
-			global::Xamarin.Forms.Platform.Resource.String.abc_search_hint = global::Philosopher.Multiplat.Droid.Resource.String.abc_search_hint;
-			global::Xamarin.Forms.Platform.Resource.String.abc_searchview_description_clear = global::Philosopher.Multiplat.Droid.Resource.String.abc_searchview_description_clear;
-			global::Xamarin.Forms.Platform.Resource.String.abc_searchview_description_query = global::Philosopher.Multiplat.Droid.Resource.String.abc_searchview_description_query;
-			global::Xamarin.Forms.Platform.Resource.String.abc_searchview_description_search = global::Philosopher.Multiplat.Droid.Resource.String.abc_searchview_description_search;
-			global::Xamarin.Forms.Platform.Resource.String.abc_searchview_description_submit = global::Philosopher.Multiplat.Droid.Resource.String.abc_searchview_description_submit;
-			global::Xamarin.Forms.Platform.Resource.String.abc_searchview_description_voice = global::Philosopher.Multiplat.Droid.Resource.String.abc_searchview_description_voice;
-			global::Xamarin.Forms.Platform.Resource.String.abc_shareactionprovider_share_with = global::Philosopher.Multiplat.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::Xamarin.Forms.Platform.Resource.String.abc_shareactionprovider_share_with_application = global::Philosopher.Multiplat.Droid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::Xamarin.Forms.Platform.Resource.String.abc_toolbar_collapse_description = global::Philosopher.Multiplat.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Xamarin.Forms.Platform.Resource.String.appbar_scrolling_view_behavior = global::Philosopher.Multiplat.Droid.Resource.String.appbar_scrolling_view_behavior;
-			global::Xamarin.Forms.Platform.Resource.String.status_bar_notification_info_overflow = global::Philosopher.Multiplat.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.AlertDialog_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.AlertDialog_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.AlertDialog_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Animation_AppCompat_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Animation_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Animation_AppCompat_DropDownUp = global::Philosopher.Multiplat.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_AlertDialog_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Animation_AppCompat_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Philosopher.Multiplat.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_ThemeOverlay_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Philosopher.Multiplat.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V21_Theme_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V22_Theme_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V23_Theme_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V7_Theme_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Philosopher.Multiplat.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Button = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_EditText = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ListView = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SearchView = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_Design_TabLayout = global::Philosopher.Multiplat.Droid.Resource.Style.Base_Widget_Design_TabLayout;
-			global::Xamarin.Forms.Platform.Resource.Style.CardView = global::Philosopher.Multiplat.Droid.Resource.Style.CardView;
-			global::Xamarin.Forms.Platform.Resource.Style.CardView_Dark = global::Philosopher.Multiplat.Droid.Resource.Style.CardView_Dark;
-			global::Xamarin.Forms.Platform.Resource.Style.CardView_Light = global::Philosopher.Multiplat.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_V11_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_V11_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_V11_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_V14_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_V14_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_V14_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_V14_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Philosopher.Multiplat.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Philosopher.Multiplat.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Body1 = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Body2 = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Button = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Caption = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Display1 = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Display2 = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Display3 = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Display4 = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Headline = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Large = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Medium = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Menu = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Small = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Subhead = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Title = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Design_Error = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_Design_Error;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Design_Hint = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_Design_Hint;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Design_Tab = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_Design_Tab;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_StatusBar_EventContent = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Philosopher.Multiplat.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_CompactMenu = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Light_Dialog = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Theme_AppCompat_NoActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat = global::Philosopher.Multiplat.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Philosopher.Multiplat.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Light = global::Philosopher.Multiplat.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionButton = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActionMode = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Button = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Button;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Button_Borderless = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Button_Colored = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Button_Small = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ButtonBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_EditText = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_EditText;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_SearchView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ListView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ListView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ListView_Menu = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_PopupMenu = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_PopupWindow = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ProgressBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_RatingBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_SearchView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_SearchView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Spinner;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Toolbar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_AppBarLayout = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_AppBarLayout;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_CollapsingToolbar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_CoordinatorLayout = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_FloatingActionButton = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_NavigationView = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_NavigationView;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_Snackbar = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_Snackbar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_TabLayout = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_TabLayout;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_Design_TextInputLayout = global::Philosopher.Multiplat.Droid.Resource.Style.Widget_Design_TextInputLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_background = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_background;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_backgroundSplit = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_backgroundStacked = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_contentInsetEnd = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_contentInsetLeft = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_contentInsetRight = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_contentInsetStart = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_customNavigationLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_displayOptions = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_displayOptions;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_divider = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_divider;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_elevation = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_elevation;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_height = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_height;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_hideOnContentScroll = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_homeLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_homeLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_icon = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_icon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_itemPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_itemPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_logo = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_logo;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_navigationMode = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_navigationMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_popupTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_popupTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_progressBarPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_progressBarStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_subtitle = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_subtitle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_subtitleTextStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_title = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_title;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBar_titleTextStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBarLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBarLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMenuItemView = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMenuItemView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMenuView = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMenuView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMode = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMode_background = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMode_background;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMode_backgroundSplit = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMode_closeItemLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMode_height = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMode_height;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMode_subtitleTextStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActionMode_titleTextStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActivityChooserView = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActivityChooserView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Philosopher.Multiplat.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AlertDialog = global::Philosopher.Multiplat.Droid.Resource.Styleable.AlertDialog;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AlertDialog_android_layout = global::Philosopher.Multiplat.Droid.Resource.Styleable.AlertDialog_android_layout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AlertDialog_listItemLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AlertDialog_listLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.AlertDialog_listLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppBarLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppBarLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppBarLayout_android_background = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppBarLayout_elevation = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppBarLayout_expanded = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppBarLayout_LayoutParams = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppBarLayout_LayoutParams;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollFlags;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppBarLayout_LayoutParams_layout_scrollInterpolator;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppCompatTextView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_textAllCaps = global::Philosopher.Multiplat.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_cardBackgroundColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_cardBackgroundColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_cardCornerRadius = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_cardCornerRadius;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_cardElevation = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_cardElevation;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_cardMaxElevation = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_cardMaxElevation;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_cardUseCompatPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_contentPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_contentPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_contentPaddingBottom = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_contentPaddingBottom;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_contentPaddingLeft = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_contentPaddingLeft;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_contentPaddingRight = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_contentPaddingRight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CardView_contentPaddingTop = global::Philosopher.Multiplat.Droid.Resource.Styleable.CardView_contentPaddingTop;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingAppBarLayout_LayoutParams = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_title = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Philosopher.Multiplat.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton = global::Philosopher.Multiplat.Droid.Resource.Styleable.CompoundButton;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_android_button = global::Philosopher.Multiplat.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonTint = global::Philosopher.Multiplat.Droid.Resource.Styleable.CompoundButton_buttonTint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonTintMode = global::Philosopher.Multiplat.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_keylines = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_LayoutParams = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_android_layout_gravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_anchorGravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_behavior;
-			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline = global::Philosopher.Multiplat.Droid.Resource.Styleable.CoordinatorLayout_LayoutParams_layout_keyline;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_barLength = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_color = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle_color;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_spinBars = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::Xamarin.Forms.Platform.Resource.Styleable.DrawerArrowToggle_thickness = global::Philosopher.Multiplat.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton_android_background = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton_android_background;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton_backgroundTint = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton_borderWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton_elevation = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton_fabSize = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::Xamarin.Forms.Platform.Resource.Styleable.FloatingActionButton_rippleColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_divider = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_showDividers = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_Layout = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Philosopher.Multiplat.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ListPopupWindow = global::Philosopher.Multiplat.Droid.Resource.Styleable.ListPopupWindow;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Philosopher.Multiplat.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Philosopher.Multiplat.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuGroup;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup_android_enabled = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuGroup_android_enabled;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup_android_id = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuGroup_android_id;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup_android_menuCategory = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup_android_orderInCategory = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuGroup_android_visible = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuGroup_android_visible;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_actionLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_actionLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_actionProviderClass = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_actionViewClass = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_actionViewClass;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_checkable = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_checkable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_checked = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_checked;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_enabled = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_enabled;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_icon = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_icon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_id = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_id;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_menuCategory = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_numericShortcut = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_onClick = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_onClick;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_orderInCategory = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_title = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_title;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_titleCondensed = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_android_visible = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_android_visible;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuItem_showAsAction = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuItem_showAsAction;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView_android_headerBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView_android_headerBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView_android_horizontalDivider = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView_android_itemBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView_android_itemBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView_android_itemTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView_android_verticalDivider = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.MenuView_preserveIconSpacing = global::Philosopher.Multiplat.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_android_background = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_android_background;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_android_maxWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_elevation = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_elevation;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_headerLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_headerLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_itemBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_itemBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_itemIconTint = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_itemIconTint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_itemTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_itemTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_itemTextColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.NavigationView_menu = global::Philosopher.Multiplat.Droid.Resource.Styleable.NavigationView_menu;
-			global::Xamarin.Forms.Platform.Resource.Styleable.PopupWindow = global::Philosopher.Multiplat.Droid.Resource.Styleable.PopupWindow;
-			global::Xamarin.Forms.Platform.Resource.Styleable.PopupWindow_android_popupBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.PopupWindow_overlapAnchor = global::Philosopher.Multiplat.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.PopupWindowBackgroundState = global::Philosopher.Multiplat.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Xamarin.Forms.Platform.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Philosopher.Multiplat.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ScrimInsetsFrameLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Philosopher.Multiplat.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollingViewBehavior_Params = global::Philosopher.Multiplat.Droid.Resource.Styleable.ScrollingViewBehavior_Params;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop = global::Philosopher.Multiplat.Droid.Resource.Styleable.ScrollingViewBehavior_Params_behavior_overlapTop;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_android_focusable = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_android_focusable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_android_imeOptions = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_android_imeOptions;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_android_inputType = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_android_inputType;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_android_maxWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_android_maxWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_closeIcon = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_closeIcon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_commitIcon = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_commitIcon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_defaultQueryHint = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_goIcon = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_goIcon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_iconifiedByDefault = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_layout = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_layout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_queryBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_queryBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_queryHint = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_queryHint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_searchHintIcon = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_searchHintIcon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_searchIcon = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_searchIcon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_submitBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_submitBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_suggestionRowLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_voiceIcon = global::Philosopher.Multiplat.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SnackbarLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.SnackbarLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SnackbarLayout_elevation = global::Philosopher.Multiplat.Droid.Resource.Styleable.SnackbarLayout_elevation;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Spinner = global::Philosopher.Multiplat.Droid.Resource.Styleable.Spinner;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Spinner_android_dropDownWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Spinner_android_popupBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.Spinner_android_popupBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Spinner_android_prompt = global::Philosopher.Multiplat.Droid.Resource.Styleable.Spinner_android_prompt;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Spinner_popupTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Spinner_popupTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_android_textOff = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_android_textOn = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_android_thumb = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_showText = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_showText;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_splitTrack = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_switchMinWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_switchPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.SwitchCompat_track = global::Philosopher.Multiplat.Droid.Resource.Styleable.SwitchCompat_track;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabContentStart = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabContentStart;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabGravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabGravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabIndicatorColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabMaxWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabMinWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabMode = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabPaddingBottom = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabPaddingEnd = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabPaddingStart = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabPaddingTop = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TabLayout_tabTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.TabLayout_tabTextColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextAppearance_android_textColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textSize = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextAppearance_android_textSize;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_typeface = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextAppearance_android_typeface;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_textAllCaps = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextInputLayout;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_android_hint = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_android_textColorHint = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_errorEnabled = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarDivider = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarDivider;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarItemBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarItemBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarPopupTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarPopupTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarSize = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarSize;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarSplitStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarSplitStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarTabBarStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarTabBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarTabStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarTabStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarTabTextStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarTabTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionBarWidgetTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionBarWidgetTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionDropDownStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionDropDownStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionMenuTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionMenuTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionMenuTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionMenuTextColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeCloseButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeCloseButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeCloseDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeCloseDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeCopyDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeCopyDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeCutDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeCutDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeFindDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeFindDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModePasteDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModePasteDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModePopupWindowStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModePopupWindowStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeSelectAllDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeSelectAllDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeShareDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeShareDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeSplitBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeSplitBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionModeWebSearchDrawable = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionModeWebSearchDrawable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionOverflowButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionOverflowButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_actionOverflowMenuStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_actionOverflowMenuStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_activityChooserViewStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_activityChooserViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_alertDialogButtonGroupStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_alertDialogButtonGroupStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_alertDialogCenterButtons = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_alertDialogCenterButtons;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_alertDialogStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_alertDialogStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_alertDialogTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_alertDialogTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_android_windowAnimationStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_android_windowAnimationStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_android_windowIsFloating = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_android_windowIsFloating;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_autoCompleteTextViewStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_autoCompleteTextViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_borderlessButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_borderlessButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_buttonBarButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_buttonBarButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_buttonBarNegativeButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_buttonBarNegativeButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_buttonBarNeutralButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_buttonBarNeutralButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_buttonBarPositiveButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_buttonBarPositiveButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_buttonBarStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_buttonBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_buttonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_buttonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_buttonStyleSmall = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_buttonStyleSmall;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_checkboxStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_checkboxStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_checkedTextViewStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_checkedTextViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_colorAccent = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_colorAccent;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_colorButtonNormal = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_colorButtonNormal;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_colorControlActivated = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_colorControlActivated;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_colorControlHighlight = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_colorControlHighlight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_colorControlNormal = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_colorControlNormal;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_colorPrimary = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_colorPrimary;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_colorPrimaryDark = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_colorPrimaryDark;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_colorSwitchThumbNormal = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_colorSwitchThumbNormal;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_controlBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_controlBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_dialogPreferredPadding = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_dialogPreferredPadding;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_dialogTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_dialogTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_dividerHorizontal = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_dividerHorizontal;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_dividerVertical = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_dividerVertical;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_dropDownListViewStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_dropDownListViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_dropdownListPreferredItemHeight = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_dropdownListPreferredItemHeight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_editTextBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_editTextBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_editTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_editTextColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_editTextStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_editTextStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_homeAsUpIndicator = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_homeAsUpIndicator;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_listChoiceBackgroundIndicator = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_listChoiceBackgroundIndicator;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_listDividerAlertDialog = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_listDividerAlertDialog;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_listPopupWindowStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_listPopupWindowStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_listPreferredItemHeight = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_listPreferredItemHeight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_listPreferredItemHeightLarge = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_listPreferredItemHeightLarge;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_listPreferredItemHeightSmall = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_listPreferredItemHeightSmall;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_listPreferredItemPaddingLeft = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_listPreferredItemPaddingLeft;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_listPreferredItemPaddingRight = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_listPreferredItemPaddingRight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_panelBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_panelBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_panelMenuListTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_panelMenuListTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_panelMenuListWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_panelMenuListWidth;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_popupMenuStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_popupMenuStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_popupWindowStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_popupWindowStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_radioButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_radioButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_ratingBarStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_ratingBarStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_searchViewStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_searchViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_selectableItemBackground = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_selectableItemBackground;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_selectableItemBackgroundBorderless = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_selectableItemBackgroundBorderless;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_spinnerDropDownItemStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_spinnerDropDownItemStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_spinnerStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_spinnerStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_switchStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_switchStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_textAppearanceLargePopupMenu = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_textAppearanceLargePopupMenu;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_textAppearanceListItem = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_textAppearanceListItem;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_textAppearanceListItemSmall = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_textAppearanceListItemSmall;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_textAppearanceSearchResultTitle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_textAppearanceSearchResultTitle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_textAppearanceSmallPopupMenu = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_textAppearanceSmallPopupMenu;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_textColorAlertDialogListItem = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_textColorAlertDialogListItem;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_textColorSearchUrl = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_textColorSearchUrl;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_toolbarNavigationButtonStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_toolbarNavigationButtonStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_toolbarStyle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_toolbarStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowActionBar = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowActionBar;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowActionBarOverlay = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowActionBarOverlay;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowActionModeOverlay = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowActionModeOverlay;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowFixedHeightMajor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowFixedHeightMajor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowFixedHeightMinor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowFixedHeightMinor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowFixedWidthMajor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowFixedWidthMajor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowFixedWidthMinor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowFixedWidthMinor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowMinWidthMajor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowMinWidthMajor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowMinWidthMinor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowMinWidthMinor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Theme_windowNoTitle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Theme_windowNoTitle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_android_gravity = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_android_gravity;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_android_minHeight = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_android_minHeight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_collapseContentDescription = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_collapseIcon = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_collapseIcon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_contentInsetEnd = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_contentInsetLeft = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_contentInsetRight = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_contentInsetStart = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_logo = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_logo;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_logoDescription = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_logoDescription;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_maxButtonHeight = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_navigationContentDescription = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_navigationIcon = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_navigationIcon;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_popupTheme = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_popupTheme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_subtitle = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_subtitle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_subtitleTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_title = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_title;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_titleMarginBottom = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_titleMarginEnd = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_titleMarginStart = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_titleMarginTop = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_titleMargins = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_titleMargins;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_titleTextAppearance = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_titleTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.Toolbar_titleTextColor;
-			global::Xamarin.Forms.Platform.Resource.Styleable.View = global::Philosopher.Multiplat.Droid.Resource.Styleable.View;
-			global::Xamarin.Forms.Platform.Resource.Styleable.View_android_focusable = global::Philosopher.Multiplat.Droid.Resource.Styleable.View_android_focusable;
-			global::Xamarin.Forms.Platform.Resource.Styleable.View_android_theme = global::Philosopher.Multiplat.Droid.Resource.Styleable.View_android_theme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.View_paddingEnd = global::Philosopher.Multiplat.Droid.Resource.Styleable.View_paddingEnd;
-			global::Xamarin.Forms.Platform.Resource.Styleable.View_paddingStart = global::Philosopher.Multiplat.Droid.Resource.Styleable.View_paddingStart;
-			global::Xamarin.Forms.Platform.Resource.Styleable.View_theme = global::Philosopher.Multiplat.Droid.Resource.Styleable.View_theme;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ViewBackgroundHelper = global::Philosopher.Multiplat.Droid.Resource.Styleable.ViewBackgroundHelper;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ViewBackgroundHelper_android_background = global::Philosopher.Multiplat.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Philosopher.Multiplat.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Philosopher.Multiplat.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat = global::Philosopher.Multiplat.Droid.Resource.Styleable.ViewStubCompat;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_id = global::Philosopher.Multiplat.Droid.Resource.Styleable.ViewStubCompat_android_id;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Philosopher.Multiplat.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::Xamarin.Forms.Platform.Resource.Styleable.ViewStubCompat_android_layout = global::Philosopher.Multiplat.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::AndroidHUD.Resource.Attribute.ahBarColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahBarColor;
+			global::AndroidHUD.Resource.Attribute.ahBarLength = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahBarLength;
+			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahBarWidth;
+			global::AndroidHUD.Resource.Attribute.ahCircleColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahCircleColor;
+			global::AndroidHUD.Resource.Attribute.ahDelayMillis = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahDelayMillis;
+			global::AndroidHUD.Resource.Attribute.ahRadius = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahRadius;
+			global::AndroidHUD.Resource.Attribute.ahRimColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahRimColor;
+			global::AndroidHUD.Resource.Attribute.ahRimWidth = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahRimWidth;
+			global::AndroidHUD.Resource.Attribute.ahSpinSpeed = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahSpinSpeed;
+			global::AndroidHUD.Resource.Attribute.ahText = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahText;
+			global::AndroidHUD.Resource.Attribute.ahTextColor = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahTextColor;
+			global::AndroidHUD.Resource.Attribute.ahTextSize = global::Philosopher.Multiplat.Droid.Resource.Attribute.ahTextSize;
+			global::AndroidHUD.Resource.Drawable.ic_errorstatus = global::Philosopher.Multiplat.Droid.Resource.Drawable.ic_errorstatus;
+			global::AndroidHUD.Resource.Drawable.ic_successstatus = global::Philosopher.Multiplat.Droid.Resource.Drawable.ic_successstatus;
+			global::AndroidHUD.Resource.Drawable.roundedbg = global::Philosopher.Multiplat.Droid.Resource.Drawable.roundedbg;
+			global::AndroidHUD.Resource.Drawable.roundedbgdark = global::Philosopher.Multiplat.Droid.Resource.Drawable.roundedbgdark;
+			global::AndroidHUD.Resource.Id.loadingImage = global::Philosopher.Multiplat.Droid.Resource.Id.loadingImage;
+			global::AndroidHUD.Resource.Id.loadingProgressBar = global::Philosopher.Multiplat.Droid.Resource.Id.loadingProgressBar;
+			global::AndroidHUD.Resource.Id.loadingProgressWheel = global::Philosopher.Multiplat.Droid.Resource.Id.loadingProgressWheel;
+			global::AndroidHUD.Resource.Id.textViewStatus = global::Philosopher.Multiplat.Droid.Resource.Id.textViewStatus;
+			global::AndroidHUD.Resource.Layout.loading = global::Philosopher.Multiplat.Droid.Resource.Layout.loading;
+			global::AndroidHUD.Resource.Layout.loadingimage = global::Philosopher.Multiplat.Droid.Resource.Layout.loadingimage;
+			global::AndroidHUD.Resource.Layout.loadingprogress = global::Philosopher.Multiplat.Droid.Resource.Layout.loadingprogress;
+			global::AndroidHUD.Resource.String.library_name = global::Philosopher.Multiplat.Droid.Resource.String.library_name;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarLength = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahCircleColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahDelayMillis = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRadius = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahRadius;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimWidth = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahText;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::GalaSoft.MvvmLight.Resource.String.ApplicationName = global::Philosopher.Multiplat.Droid.Resource.String.ApplicationName;
+			global::GalaSoft.MvvmLight.Resource.String.Hello = global::Philosopher.Multiplat.Droid.Resource.String.Hello;
+			global::Splat.Resource.String.library_name = global::Philosopher.Multiplat.Droid.Resource.String.library_name;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
@@ -1645,6 +228,42 @@ namespace Philosopher.Multiplat.Droid
 			
 			// aapt resource value: 0x7f010098
 			public const int activityChooserViewStyle = 2130772120;
+			
+			// aapt resource value: 0x7f01011b
+			public const int ahBarColor = 2130772251;
+			
+			// aapt resource value: 0x7f010123
+			public const int ahBarLength = 2130772259;
+			
+			// aapt resource value: 0x7f010122
+			public const int ahBarWidth = 2130772258;
+			
+			// aapt resource value: 0x7f010120
+			public const int ahCircleColor = 2130772256;
+			
+			// aapt resource value: 0x7f01011f
+			public const int ahDelayMillis = 2130772255;
+			
+			// aapt resource value: 0x7f010121
+			public const int ahRadius = 2130772257;
+			
+			// aapt resource value: 0x7f01011c
+			public const int ahRimColor = 2130772252;
+			
+			// aapt resource value: 0x7f01011d
+			public const int ahRimWidth = 2130772253;
+			
+			// aapt resource value: 0x7f01011e
+			public const int ahSpinSpeed = 2130772254;
+			
+			// aapt resource value: 0x7f010118
+			public const int ahText = 2130772248;
+			
+			// aapt resource value: 0x7f010119
+			public const int ahTextColor = 2130772249;
+			
+			// aapt resource value: 0x7f01011a
+			public const int ahTextSize = 2130772250;
 			
 			// aapt resource value: 0x7f0100ba
 			public const int alertDialogButtonGroupStyle = 2130772154;
@@ -3229,88 +1848,100 @@ namespace Philosopher.Multiplat.Droid
 			public const int ic_cast_on_light = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int ic_media_pause = 2130837576;
+			public const int ic_errorstatus = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int ic_media_play = 2130837577;
+			public const int ic_media_pause = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int ic_media_route_disabled_mono_dark = 2130837578;
+			public const int ic_media_play = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int ic_media_route_off_mono_dark = 2130837579;
+			public const int ic_media_route_disabled_mono_dark = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int ic_media_route_on_0_mono_dark = 2130837580;
+			public const int ic_media_route_off_mono_dark = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_media_route_on_1_mono_dark = 2130837581;
+			public const int ic_media_route_on_0_mono_dark = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_media_route_on_2_mono_dark = 2130837582;
+			public const int ic_media_route_on_1_mono_dark = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_media_route_on_mono_dark = 2130837583;
+			public const int ic_media_route_on_2_mono_dark = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_pause_dark = 2130837584;
+			public const int ic_media_route_on_mono_dark = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_pause_light = 2130837585;
+			public const int ic_pause_dark = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_play_dark = 2130837586;
+			public const int ic_pause_light = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_play_light = 2130837587;
+			public const int ic_play_dark = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_setting_dark = 2130837588;
+			public const int ic_play_light = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_setting_light = 2130837589;
+			public const int ic_setting_dark = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int icon = 2130837590;
+			public const int ic_setting_light = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int mr_ic_cast_dark = 2130837591;
+			public const int ic_successstatus = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int mr_ic_cast_light = 2130837592;
+			public const int icon = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837593;
+			public const int mr_ic_cast_dark = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int mr_ic_media_route_connecting_mono_light = 2130837594;
+			public const int mr_ic_cast_light = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int mr_ic_media_route_mono_dark = 2130837595;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int mr_ic_media_route_mono_light = 2130837596;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int mr_ic_pause_dark = 2130837597;
+			public const int mr_ic_media_route_mono_dark = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int mr_ic_pause_light = 2130837598;
+			public const int mr_ic_media_route_mono_light = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int mr_ic_play_dark = 2130837599;
+			public const int mr_ic_pause_dark = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int mr_ic_play_light = 2130837600;
+			public const int mr_ic_pause_light = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int mr_ic_settings_dark = 2130837601;
+			public const int mr_ic_play_dark = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int mr_ic_settings_light = 2130837602;
+			public const int mr_ic_play_light = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_template_icon_bg = 2130837603;
+			public const int mr_ic_settings_dark = 2130837603;
+			
+			// aapt resource value: 0x7f020064
+			public const int mr_ic_settings_light = 2130837604;
+			
+			// aapt resource value: 0x7f020067
+			public const int notification_template_icon_bg = 2130837607;
+			
+			// aapt resource value: 0x7f020065
+			public const int roundedbg = 2130837605;
+			
+			// aapt resource value: 0x7f020066
+			public const int roundedbgdark = 2130837606;
 			
 			static Drawable()
 			{
@@ -3325,8 +1956,8 @@ namespace Philosopher.Multiplat.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0074
-			public const int action0 = 2131427444;
+			// aapt resource value: 0x7f0b0078
+			public const int action0 = 2131427448;
 			
 			// aapt resource value: 0x7f0b0055
 			public const int action_bar = 2131427413;
@@ -3352,8 +1983,8 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b0056
 			public const int action_context_bar = 2131427414;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int action_divider = 2131427448;
+			// aapt resource value: 0x7f0b007c
+			public const int action_divider = 2131427452;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -3379,8 +2010,8 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b001c
 			public const int always = 2131427356;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int art = 2131427436;
+			// aapt resource value: 0x7f0b0070
+			public const int art = 2131427440;
 			
 			// aapt resource value: 0x7f0b0019
 			public const int beginning = 2131427353;
@@ -3391,11 +2022,11 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b004b
 			public const int buttonPanel = 2131427403;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int buttons = 2131427441;
-			
 			// aapt resource value: 0x7f0b0075
-			public const int cancel_action = 2131427445;
+			public const int buttons = 2131427445;
+			
+			// aapt resource value: 0x7f0b0079
+			public const int cancel_action = 2131427449;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int center = 2131427369;
@@ -3409,8 +2040,8 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b004d
 			public const int checkbox = 2131427405;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int chronometer = 2131427451;
+			// aapt resource value: 0x7f0b007f
+			public const int chronometer = 2131427455;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int clip_horizontal = 2131427377;
@@ -3436,14 +2067,14 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b003e
 			public const int default_activity_button = 2131427390;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int default_control_frame = 2131427435;
+			// aapt resource value: 0x7f0b006f
+			public const int default_control_frame = 2131427439;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int disableHome = 2131427341;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int disconnect = 2131427442;
+			// aapt resource value: 0x7f0b0076
+			public const int disconnect = 2131427446;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int edit_query = 2131427415;
@@ -3451,8 +2082,8 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b001a
 			public const int end = 2131427354;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int end_padder = 2131427456;
+			// aapt resource value: 0x7f0b0084
+			public const int end_padder = 2131427460;
 			
 			// aapt resource value: 0x7f0b0022
 			public const int enterAlways = 2131427362;
@@ -3496,17 +2127,17 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b003d
 			public const int image = 2131427389;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int info = 2131427455;
+			// aapt resource value: 0x7f0b0083
+			public const int info = 2131427459;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int left = 2131427373;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int line1 = 2131427449;
-			
 			// aapt resource value: 0x7f0b007d
-			public const int line3 = 2131427453;
+			public const int line1 = 2131427453;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int line3 = 2131427457;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int listMode = 2131427338;
@@ -3514,20 +2145,29 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b003f
 			public const int list_item = 2131427391;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int media_actions = 2131427447;
-			
-			// aapt resource value: 0x7f0b006a
-			public const int media_route_control_frame = 2131427434;
+			// aapt resource value: 0x7f0b0068
+			public const int loadingImage = 2131427432;
 			
 			// aapt resource value: 0x7f0b0066
-			public const int media_route_list = 2131427430;
+			public const int loadingProgressBar = 2131427430;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int media_route_volume_layout = 2131427439;
+			// aapt resource value: 0x7f0b0069
+			public const int loadingProgressWheel = 2131427433;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int media_route_volume_slider = 2131427440;
+			// aapt resource value: 0x7f0b007b
+			public const int media_actions = 2131427451;
+			
+			// aapt resource value: 0x7f0b006e
+			public const int media_route_control_frame = 2131427438;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int media_route_list = 2131427434;
+			
+			// aapt resource value: 0x7f0b0073
+			public const int media_route_volume_layout = 2131427443;
+			
+			// aapt resource value: 0x7f0b0074
+			public const int media_route_volume_slider = 2131427444;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int middle = 2131427355;
@@ -3556,8 +2196,8 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b0027
 			public const int pin = 2131427367;
 			
-			// aapt resource value: 0x7f0b006d
-			public const int play_pause = 2131427437;
+			// aapt resource value: 0x7f0b0071
+			public const int play_pause = 2131427441;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -3571,8 +2211,8 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b002e
 			public const int right = 2131427374;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int route_name = 2131427432;
+			// aapt resource value: 0x7f0b006c
+			public const int route_name = 2131427436;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int screen = 2131427349;
@@ -3619,8 +2259,8 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b0063
 			public const int select_dialog_listview = 2131427427;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int settings = 2131427433;
+			// aapt resource value: 0x7f0b006d
+			public const int settings = 2131427437;
 			
 			// aapt resource value: 0x7f0b004e
 			public const int shortcut = 2131427406;
@@ -3655,38 +2295,41 @@ namespace Philosopher.Multiplat.Droid
 			// aapt resource value: 0x7f0b002f
 			public const int start = 2131427375;
 			
-			// aapt resource value: 0x7f0b0076
-			public const int status_bar_latest_event_content = 2131427446;
+			// aapt resource value: 0x7f0b007a
+			public const int status_bar_latest_event_content = 2131427450;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int stop = 2131427443;
+			// aapt resource value: 0x7f0b0077
+			public const int stop = 2131427447;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int submit_area = 2131427424;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int subtitle = 2131427438;
+			// aapt resource value: 0x7f0b0072
+			public const int subtitle = 2131427442;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int tabMode = 2131427340;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int text = 2131427454;
+			// aapt resource value: 0x7f0b0082
+			public const int text = 2131427458;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int text2 = 2131427452;
+			// aapt resource value: 0x7f0b0080
+			public const int text2 = 2131427456;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int textSpacerNoButtons = 2131427400;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int time = 2131427450;
+			// aapt resource value: 0x7f0b0067
+			public const int textViewStatus = 2131427431;
+			
+			// aapt resource value: 0x7f0b007e
+			public const int time = 2131427454;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int title = 2131427393;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int title_bar = 2131427431;
+			// aapt resource value: 0x7f0b006b
+			public const int title_bar = 2131427435;
 			
 			// aapt resource value: 0x7f0b0044
 			public const int title_template = 2131427396;
@@ -3856,49 +2499,58 @@ namespace Philosopher.Multiplat.Droid
 			public const int design_navigation_menu = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int mr_media_route_chooser_dialog = 2130903073;
+			public const int loading = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int mr_media_route_controller_material_dialog_b = 2130903074;
+			public const int loadingimage = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int mr_media_route_list_item = 2130903075;
+			public const int loadingprogress = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int notification_media_action = 2130903076;
+			public const int mr_media_route_chooser_dialog = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int notification_media_cancel_action = 2130903077;
+			public const int mr_media_route_controller_material_dialog_b = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int notification_template_big_media = 2130903078;
+			public const int mr_media_route_list_item = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_template_big_media_narrow = 2130903079;
+			public const int notification_media_action = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_template_lines = 2130903080;
+			public const int notification_media_cancel_action = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int notification_template_media = 2130903081;
+			public const int notification_template_big_media = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_template_part_chronometer = 2130903082;
+			public const int notification_template_big_media_narrow = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_template_part_time = 2130903083;
+			public const int notification_template_lines = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int select_dialog_item_material = 2130903084;
+			public const int notification_template_media = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int select_dialog_multichoice_material = 2130903085;
+			public const int notification_template_part_chronometer = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int select_dialog_singlechoice_material = 2130903086;
+			public const int notification_template_part_time = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int support_simple_spinner_dropdown_item = 2130903087;
+			public const int select_dialog_item_material = 2130903087;
+			
+			// aapt resource value: 0x7f030030
+			public const int select_dialog_multichoice_material = 2130903088;
+			
+			// aapt resource value: 0x7f030031
+			public const int select_dialog_singlechoice_material = 2130903089;
+			
+			// aapt resource value: 0x7f030032
+			public const int support_simple_spinner_dropdown_item = 2130903090;
 			
 			static Layout()
 			{
@@ -3912,6 +2564,12 @@ namespace Philosopher.Multiplat.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f050020
+			public const int ApplicationName = 2131034144;
+			
+			// aapt resource value: 0x7f05001f
+			public const int Hello = 2131034143;
 			
 			// aapt resource value: 0x7f05000b
 			public const int abc_action_bar_home_description = 2131034123;
@@ -3966,6 +2624,9 @@ namespace Philosopher.Multiplat.Droid
 			
 			// aapt resource value: 0x7f05001d
 			public const int appbar_scrolling_view_behavior = 2131034141;
+			
+			// aapt resource value: 0x7f05001e
+			public const int library_name = 2131034142;
 			
 			// aapt resource value: 0x7f050000
 			public const int mr_media_route_button_content_description = 2131034112;
@@ -5716,6 +4377,56 @@ namespace Philosopher.Multiplat.Droid
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
+			
+			public static int[] ProgressWheel = new int[] {
+					2130772248,
+					2130772249,
+					2130772250,
+					2130772251,
+					2130772252,
+					2130772253,
+					2130772254,
+					2130772255,
+					2130772256,
+					2130772257,
+					2130772258,
+					2130772259};
+			
+			// aapt resource value: 3
+			public const int ProgressWheel_ahBarColor = 3;
+			
+			// aapt resource value: 11
+			public const int ProgressWheel_ahBarLength = 11;
+			
+			// aapt resource value: 10
+			public const int ProgressWheel_ahBarWidth = 10;
+			
+			// aapt resource value: 8
+			public const int ProgressWheel_ahCircleColor = 8;
+			
+			// aapt resource value: 7
+			public const int ProgressWheel_ahDelayMillis = 7;
+			
+			// aapt resource value: 9
+			public const int ProgressWheel_ahRadius = 9;
+			
+			// aapt resource value: 4
+			public const int ProgressWheel_ahRimColor = 4;
+			
+			// aapt resource value: 5
+			public const int ProgressWheel_ahRimWidth = 5;
+			
+			// aapt resource value: 6
+			public const int ProgressWheel_ahSpinSpeed = 6;
+			
+			// aapt resource value: 0
+			public const int ProgressWheel_ahText = 0;
+			
+			// aapt resource value: 1
+			public const int ProgressWheel_ahTextColor = 1;
+			
+			// aapt resource value: 2
+			public const int ProgressWheel_ahTextSize = 2;
 			
 			public static int[] ScrimInsetsFrameLayout = new int[] {
 					2130772225};

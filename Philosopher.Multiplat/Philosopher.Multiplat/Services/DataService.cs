@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Net.Http;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,20 +11,38 @@ using Philosopher.Multiplat.Models;
 
 namespace Philosopher.Multiplat.Services
 {
-    public class DataService
+    public class DataService : INotifyPropertyChanged
     {
         private const string GET_SCRIPT_ENDPOINT = "/scr";
         private const string CALL_SCRIPT_ENDPOINT = "/scr/{0}";
-        
-        public string BaseUrl { get; }
+
+        private string _baseUrl;
+
+        public string BaseUrl
+        {
+            get { return _baseUrl; }
+            set
+            {
+                if (_baseUrl != value)
+                {
+                    _baseUrl = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
         private readonly HttpClient _client;
 
         public DataService() : this("http://localhost", 3000) { }
 
-        public DataService(string hostname, int portNumber)
+        public DataService(string hostname, uint portNumber)
         {
             BaseUrl = $"{hostname}:{portNumber}";
             _client = new HttpClient();
+        }
+
+        public void ChangeHostname(string hostname, uint portNumber = 3000)
+        {
+            BaseUrl = $"{hostname}:{portNumber}";
         }
 
         //Can return null.
@@ -72,6 +92,12 @@ namespace Philosopher.Multiplat.Services
                 System.Diagnostics.Debug.WriteLine("CallScripts failed because: " + ex.ToString());
                 return ex.ToString();
             }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

@@ -7,6 +7,8 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Acr.UserDialogs;
+using Philosopher.Multiplat.Helpers;
 using Philosopher.Multiplat.Models;
 using Philosopher.Multiplat.Services;
 using Xamarin.Forms;
@@ -15,7 +17,7 @@ namespace Philosopher.Multiplat
 {
     public partial class MainPage : ContentPage, INotifyPropertyChanged
     {
-        private CancellationTokenSource _cts;
+        public static int ResponseShrunkHeight => 25;
 
         private DataService _dataService;
         public DataService DataService
@@ -31,7 +33,7 @@ namespace Philosopher.Multiplat
             }
         }
 
-        private ObservableCollection<ServerScript> _scriptList;
+        private ObservableCollection<ServerScript> _scriptList = new ObservableCollection<ServerScript>();
         public ObservableCollection<ServerScript> ScriptList
         {
             get { return _scriptList; }
@@ -59,33 +61,128 @@ namespace Philosopher.Multiplat
             }
         }
 
+        private GridLength _serverResponseBlockHeight = 25;
+        public GridLength ServerResponseBlockHeight
+        {
+            get { return _serverResponseBlockHeight; }
+            set
+            {
+                _serverResponseBlockHeight = value;
+                OnPropertyChanged(nameof(ServerResponseBlockHeight));
+            }
+        }
 
+        private double _responseLabelHeight;
+        public double ResponseLabelHeight
+        {
+            get { return _responseLabelHeight; }
+            set
+            {
+                if (_responseLabelHeight != value)
+                {
+                    _responseLabelHeight = value;
+                    OnPropertyChanged(nameof(ResponseLabelHeight));
+                }
+            }
+        }
 
         public MainPage()
         {
-            DataService = new DataService("http://192.168.0.8", 3000);
             InitializeComponent();
+            DataService = new DataService(Settings.HostnameSetting, (uint)Settings.PortSetting);
             this.BindingContext = this;
-        }
-
-        protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            base.OnPropertyChanged(propertyName);
+            this.Appearing += MainPage_OnAppearing;
+            this.ConnectedToLink.Clicked += ConnectedToLink_OnClicked;
+            this.Disappearing += MainPage_Disappearing;
         }
 
         private async void MainPage_OnAppearing(object sender, EventArgs e)
         {
-            _cts = new CancellationTokenSource(TimeSpan.FromSeconds(20));
-            List<ServerScript> scripts = await DataService.GetScripts(_cts.Token);
-            List<ServerScriptVm> bindableScripts = scripts.Select(x => new ServerScriptVm(x)).ToList();
-            ScriptList = new ObservableCollection<ServerScript>(bindableScripts);
+            using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(20)))
+            {
+                try
+                {
+                    List<ServerScript> scripts = await DataService.GetScripts(cts.Token);
+                    List<ServerScriptVm> bindableScripts = scripts.Select(x => new ServerScriptVm(x)).ToList();
+                    ScriptList = new ObservableCollection<ServerScript>(bindableScripts);
+                }
+                catch (Exception ex)
+                {
+                    ConnectedToLink_OnClicked(null, null);
+                }
+            }
         }
 
-        private void ConnectedToLink_OnClicked(object sender, EventArgs e)
+        private void MainPage_Disappearing(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            string[] urlComponents = DataService.BaseUrl.Split(':');
+            Settings.HostnameSetting = urlComponents[0];
+            Settings.PortSetting = UInt32.Parse(urlComponents[1]);
+
+            this.Appearing -= MainPage_OnAppearing;
+            this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;
+            this.Disappearing -= MainPage_Disappearing;
         }
 
+        private async void ConnectedToLink_OnClicked(object sender, EventArgs e)
+        {
+            //PromptResult result = null;
+            //await UserDialogs.Instance.PromptAsync(HostnamePromptConfig);
+            DialogResult result = await DependencyService.Get<IDialogService>().ShowPromptAsync("Enter the server's hostname and (optionally) port number.",
+                "Enter server info",
+                null,
+                null,
+                "Hostname");
+            if (result.Ok && !String.IsNullOrWhiteSpace(result.InputText))
+            {
+                string text = result.InputText.Replace("http://", "");
+                string[] inputs = text.Split(':');
+                string hostname = inputs.FirstOrDefault();
+                if (hostname == null)
+                {
+                    await UserDialogs.Instance.AlertAsync("You must enter a hostname.", "Invalid hostname");
+                    return;
+                }
+                hostname = $"http://{hostname}";
+                bool maybeHasPort = inputs.Skip(1).Take(1).FirstOrDefault() != null;
+                if (maybeHasPort)
+                {
+                    uint portNum;
+                    if (UInt32.TryParse(inputs[1], out portNum))
+                    {
+                        await ChangeServer(hostname, portNum);
+                    }
+                    else
+                    {
+                        await UserDialogs.Instance.AlertAsync("You must enter a hostname.", "Invalid hostname");
+                    }
+                }
+                else
+                {
+                    //todo: Make the "3000" port number a constant somewhere
+                    await ChangeServer(hostname, 3000);
+                }
+            }
+        }
+
+        private async Task ChangeServer(string hostname, uint portNum)
+        {
+            DataService.ChangeHostname(hostname, portNum);
+            using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(20)))
+            {
+                List<ServerScript> newScripts = await DataService.GetScripts(cts.Token);
+                List<ServerScriptVm> bindableScripts = newScripts.Select(x => new ServerScriptVm(x)).ToList();
+                ScriptList.Clear();
+                foreach (var scr in bindableScripts)
+                {
+                    ScriptList.Add(scr);
+                }
+                Settings.HostnameSetting = hostname;
+                Settings.PortSetting = portNum;
+            }
+        }
+
+        //todo: replace event with commanding model. we've probably got memory leaks on this event subscription
         private async void ScriptsListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             ServerScriptVm item = e.Item as ServerScriptVm;
@@ -94,28 +191,36 @@ namespace Philosopher.Multiplat
                 return;
             }
 
-            int index = ScriptList.IndexOf(item);
+            using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(20)))
+            {
+                ListView list = sender as ListView;
+                Cell viewCell = ((IReadOnlyList<Cell>)e.Group).FirstOrDefault(x => x.BindingContext == item);
+                item.IsLoading = true;
+                try
+                {
+                    string output = (await DataService.CallServerScript(item, cts.Token)).Trim();
+                    MostRecentServerResponse = output;
+                    item.LastServerResponse = output;
+                }
+                catch (Exception ex)
+                {
+                    item.IsLoading = false;
+                    item.LastServerResponse = $"Error: {ex.ToString()}";
+                }
+                finally
+                {
+                    item.IsLoading = false;
+                    await Task.Delay(TimeSpan.FromSeconds(10));
+                    item.LastServerResponse = "";
+                }
+            }
+        }
 
-            _cts = new CancellationTokenSource(TimeSpan.FromSeconds(20));
-            ListView list = sender as ListView;
-            Cell viewCell = ((IReadOnlyList<Cell>) e.Group).FirstOrDefault(x => x.BindingContext == item);
-            viewCell.IsEnabled = false;
-            item.IsLoading = true;            
-            try
-            {
-                string output = (await DataService.CallServerScript(item, _cts.Token)).Trim();
-                MostRecentServerResponse = output;
-                ScriptList.Remove(item);
-                ScriptList.Insert(index, item.WithOutput(output));
-            }
-            finally
-            {
-                item.IsLoading = false;
-                viewCell.IsEnabled = true;
-                await Task.Delay(TimeSpan.FromSeconds(10));
-                ScriptList.Remove(item);
-                ScriptList.Insert(index, item.WithOutput(""));
-            }
+        private void ExpandHideButton_OnClicked(object sender, EventArgs e)
+        {
+            ServerResponseBlockHeight = ServerResponseBlockHeight.Value == ResponseShrunkHeight
+                ? GridLength.Auto
+                : ResponseShrunkHeight;
         }
     }
 
@@ -130,7 +235,7 @@ namespace Philosopher.Multiplat
                 if (value != _isLoading)
                 {
                     _isLoading = value;
-                    NotifyPropertyChanged();
+                    OnPropertyChanged();
                 }
             }
         }
@@ -144,8 +249,8 @@ namespace Philosopher.Multiplat
                 if (_lastServerResponse != value)
                 {
                     _lastServerResponse = value;
-                    NotifyPropertyChanged(nameof(LastServerResponse));
-                    NotifyPropertyChanged(nameof(ShouldShow));
+                    OnPropertyChanged(nameof(LastServerResponse));
+                    OnPropertyChanged(nameof(ShouldShow));
                 }
             }
         }
@@ -168,7 +273,7 @@ namespace Philosopher.Multiplat
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged([CallerMemberName]string property = "")
+        private void OnPropertyChanged([CallerMemberName]string property = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(property));
         }

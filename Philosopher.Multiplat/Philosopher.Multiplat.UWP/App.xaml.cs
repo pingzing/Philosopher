@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -14,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Philosopher.Multiplat.UWP.Services;
 
 namespace Philosopher.Multiplat.UWP
 {
@@ -58,7 +60,15 @@ namespace Philosopher.Multiplat.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                Xamarin.Forms.Forms.Init(e);
+                //Required for .NET Native
+                List<Assembly> assembliesToInclude = new List<Assembly>
+                {
+                    typeof (Acr.UserDialogs.UserDialogs).GetTypeInfo().Assembly,
+                    typeof (GalaSoft.MvvmLight.ViewModelBase).GetTypeInfo().Assembly
+                };
+                Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+                //Also required for .NET Native.
+                Xamarin.Forms.DependencyService.Register<DialogService>();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
