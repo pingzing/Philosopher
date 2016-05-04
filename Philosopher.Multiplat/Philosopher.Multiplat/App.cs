@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Philosopher.Multiplat.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

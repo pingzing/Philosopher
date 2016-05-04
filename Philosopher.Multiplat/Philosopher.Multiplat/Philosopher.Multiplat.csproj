@@ -38,16 +38,23 @@
     <Compile Include="App.cs" />
     <Compile Include="Converters\BoolNegationConverter.cs" />
     <Compile Include="Converters\TrueIfGrEqualConverter.cs" />
+    <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Helpers\Settings.cs" />
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Models\WakeupTarget.cs" />
+    <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ScriptsPage.xaml.cs">
+      <DependentUpon>ScriptsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\SavedServer.cs" />
     <Compile Include="Models\ServerScript.cs" />
+    <Compile Include="Pages\WakePage.xaml.cs">
+      <DependentUpon>WakePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DataService.cs" />
-    <Compile Include="Services\IDialogService.cs" />
     <Compile Include="Services\SettingsService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -112,7 +119,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainPage.xaml">
+    <EmbeddedResource Include="Pages\ScriptsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\WakePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

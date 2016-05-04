@@ -13,9 +13,9 @@ using Philosopher.Multiplat.Models;
 using Philosopher.Multiplat.Services;
 using Xamarin.Forms;
 
-namespace Philosopher.Multiplat
+namespace Philosopher.Multiplat.Pages
 {
-    public partial class MainPage : ContentPage, INotifyPropertyChanged
+    public partial class ScriptsPage : ContentPage, INotifyPropertyChanged
     {
         public static int ResponseShrunkHeight => 25;
 
@@ -86,7 +86,7 @@ namespace Philosopher.Multiplat
             }
         }
 
-        public MainPage()
+        public ScriptsPage()
         {
             InitializeComponent();
             DataService = new DataService(Settings.HostnameSetting, (uint)Settings.PortSetting);
@@ -115,7 +115,7 @@ namespace Philosopher.Multiplat
 
         private void MainPage_Disappearing(object sender, EventArgs e)
         {
-            string[] urlComponents = DataService.BaseUrl.Split(':');
+            string[] urlComponents = DataService.BaseUrl.Replace("http://", "").Split(':');
             Settings.HostnameSetting = urlComponents[0];
             Settings.PortSetting = UInt32.Parse(urlComponents[1]);
 
@@ -126,16 +126,10 @@ namespace Philosopher.Multiplat
 
         private async void ConnectedToLink_OnClicked(object sender, EventArgs e)
         {
-            //PromptResult result = null;
-            //await UserDialogs.Instance.PromptAsync(HostnamePromptConfig);
-            DialogResult result = await DependencyService.Get<IDialogService>().ShowPromptAsync("Enter the server's hostname and (optionally) port number.",
-                "Enter server info",
-                null,
-                null,
-                "Hostname");
-            if (result.Ok && !String.IsNullOrWhiteSpace(result.InputText))
+            PromptResult result = await UserDialogs.Instance.PromptAsync(HostnamePromptConfig);            
+            if (result != null && result.Ok && !String.IsNullOrWhiteSpace(result.Text))
             {
-                string text = result.InputText.Replace("http://", "");
+                string text = result.Text.Replace("http://", "");
                 string[] inputs = text.Split(':');
                 string hostname = inputs.FirstOrDefault();
                 if (hostname == null)
@@ -158,9 +152,8 @@ namespace Philosopher.Multiplat
                     }
                 }
                 else
-                {
-                    //todo: Make the "3000" port number a constant somewhere
-                    await ChangeServer(hostname, 3000);
+                {                    
+                    await ChangeServer(hostname, Constants.DEFAULT_PORT);
                 }
             }
         }

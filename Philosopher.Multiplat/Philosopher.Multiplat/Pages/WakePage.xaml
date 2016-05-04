@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Philosopher.Multiplat.Pages.WakePage">
+  <StackLayout>
+    <Entry x:Name="HostnameEntry" 
+           Placeholder="Hostname or IP"
+           Text="{Binding HostName, Mode=TwoWay}"/>
+    <Entry x:Name="PortNumberEntry" 
+           Placeholder="Port Number"
+           Text="{Binding PortNumber, Mode=TwoWay}"/>
+    <Entry x:Name="MacEntry"
+           Placeholder="MAC Address"
+           Text="{Binding MacAddress, Mode=TwoWay}"/>
+    <Button x:Name="SendButton"
+            Text="Send"/>
+    <ListView x:Name="RecentListView" 
+              Header="Recent"
+              ItemsSource="{Binding SavedWakeupTargets}"/>
+  </StackLayout>
+</ContentPage>

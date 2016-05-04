@@ -15,7 +15,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Philosopher.Multiplat.UWP.Services;
 
 namespace Philosopher.Multiplat.UWP
 {
@@ -45,7 +44,7 @@ namespace Philosopher.Multiplat.UWP
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+                //this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
 
@@ -67,8 +66,7 @@ namespace Philosopher.Multiplat.UWP
                     typeof (GalaSoft.MvvmLight.ViewModelBase).GetTypeInfo().Assembly
                 };
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-                //Also required for .NET Native.
-                Xamarin.Forms.DependencyService.Register<DialogService>();
+                //Also required for .NET Native.                
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
