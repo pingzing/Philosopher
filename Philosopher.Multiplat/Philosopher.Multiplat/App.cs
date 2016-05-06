@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Philosopher.Multiplat.Pages;
+using Philosopher.Multiplat.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,6 +14,9 @@ namespace Philosopher.Multiplat
     {
         public App()
         {
+            Device.OnPlatform(
+                iOS: DependencyService.Register<DataService>,
+                Android: DependencyService.Register<DataService>);
             // The root page of your application
             MainPage = new MainPage();
         }

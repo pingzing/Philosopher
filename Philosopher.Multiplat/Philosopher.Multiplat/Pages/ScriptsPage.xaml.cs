@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
@@ -19,8 +20,8 @@ namespace Philosopher.Multiplat.Pages
     {
         public static int ResponseShrunkHeight => 25;
 
-        private DataService _dataService;
-        public DataService DataService
+        private IDataService _dataService;
+        public IDataService DataService
         {
             get { return _dataService; }
             set
@@ -31,7 +32,7 @@ namespace Philosopher.Multiplat.Pages
                     OnPropertyChanged(nameof(DataService));
                 }
             }
-        }
+        }        
 
         private ObservableCollection<ServerScript> _scriptList = new ObservableCollection<ServerScript>();
         public ObservableCollection<ServerScript> ScriptList
@@ -89,36 +90,80 @@ namespace Philosopher.Multiplat.Pages
         public ScriptsPage()
         {
             InitializeComponent();
-            DataService = new DataService(Settings.HostnameSetting, (uint)Settings.PortSetting);
+            DataService = DependencyService.Get<IDataService>()
+                .Create(Settings.HostnameSetting, (uint) Settings.PortSetting);
             this.BindingContext = this;
             this.Appearing += MainPage_OnAppearing;
             this.Disappearing -= MainPage_Disappearing;
-
         }
 
         private async void MainPage_OnAppearing(object sender, EventArgs e)
-        {            
+        {
             this.ConnectedToLink.Clicked += ConnectedToLink_OnClicked;
             this.Disappearing += MainPage_Disappearing;
 
-            using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(20)))
+            await UpdateScripts();
+        }
+
+        private async Task UpdateScripts()
+        {
+            try
             {
-                try
+                using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(30)))
                 {
-                    List<ServerScript> scripts = await DataService.GetScripts(cts.Token);
-                    List<ServerScriptVm> bindableScripts = scripts.Select(x => new ServerScriptVm(x)).ToList();
-                    ScriptList = new ObservableCollection<ServerScript>(bindableScripts);
+                    while (!cts.IsCancellationRequested)
+                    {
+                        ResultOrErrorResponse<List<ServerScript>> result = await DataService.GetScripts(cts.Token);
+                        if (result.IsResult)
+                        {
+                            try
+                            {
+                                List<ServerScript> scripts = result.Result;
+                                if (scripts == null)
+                                {
+                                    ConnectedToLink_OnClicked(null, null);
+                                    return;
+                                }
+                                List<ServerScriptVm> bindableScripts = scripts.Select(x => new ServerScriptVm(x)).ToList();
+                                ScriptList = new ObservableCollection<ServerScript>(bindableScripts);
+                                return;
+                            }
+
+                            catch (Exception ex)
+                            {
+                                ConnectedToLink_OnClicked(null, null);
+                                return;
+                            }
+                        }
+                        else if ((HttpStatusCode) result.ErrorResponse.HttpStatusCode == HttpStatusCode.Unauthorized)
+                        {
+                            var dialogResult = await UserDialogs.Instance.LoginAsync("Authorization required",
+                                $"Access denied. The server says \"{result.ErrorResponse.ResponseMessage}\"");
+                            if (dialogResult != null
+                                && dialogResult.Ok
+                                && !String.IsNullOrWhiteSpace(dialogResult.LoginText)
+                                && !String.IsNullOrWhiteSpace(dialogResult.Password))
+                            {
+                                DataService.Login(dialogResult.LoginText, dialogResult.Password);
+                                //loop and try again
+                            }
+                        }
+                        else
+                        {
+                            return;
+                        }
+                    }
                 }
-                catch (Exception ex)
-                {
-                    ConnectedToLink_OnClicked(null, null);
-                }
+            }
+            catch (OperationCanceledException ex)
+            {
+                System.Diagnostics.Debug.WriteLine("UpdateScripts timed out. Details:\n" + ex.ToString());
             }
         }
 
         private void MainPage_Disappearing(object sender, EventArgs e)
-        {            
-            if(DataService.BaseUrl.Contains("://"))
+        {
+            if (DataService.BaseUrl.Contains("://"))
             {
                 string[] urlComponents = DataService.BaseUrl.Split(':');
                 Settings.HostnameSetting = urlComponents[0] + ":" + urlComponents[1];
@@ -129,23 +174,23 @@ namespace Philosopher.Multiplat.Pages
                 string[] urlComponents = DataService.BaseUrl.Split(':');
                 Settings.HostnameSetting = urlComponents[0];
                 Settings.PortSetting = UInt32.Parse(urlComponents[1]);
-            }            
-            
-            this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;            
+            }
+
+            this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;
         }
 
         private async void ConnectedToLink_OnClicked(object sender, EventArgs e)
         {
-            PromptResult result = await UserDialogs.Instance.PromptAsync(HostnamePromptConfig);            
+            PromptResult result = await UserDialogs.Instance.PromptAsync(HostnamePromptConfig);
             if (result != null && result.Ok && !String.IsNullOrWhiteSpace(result.Text))
             {
                 string text = result.Text;
                 HostnamePrefix prefix;
-                if(text.Contains("http://"))
+                if (text.Contains("http://"))
                 {
                     prefix = HostnamePrefix.Http;
                 }
-                else if(text.Contains("https://"))
+                else if (text.Contains("https://"))
                 {
                     prefix = HostnamePrefix.Https;
                 }
@@ -153,7 +198,7 @@ namespace Philosopher.Multiplat.Pages
                 {
                     prefix = HostnamePrefix.None;
                 }
-                switch(prefix)
+                switch (prefix)
                 {
                     case HostnamePrefix.Http:
                         text = text.Replace("http://", "");
@@ -173,7 +218,7 @@ namespace Philosopher.Multiplat.Pages
                     await UserDialogs.Instance.AlertAsync("You must enter a hostname.", "Invalid hostname");
                     return;
                 }
-                switch(prefix)
+                switch (prefix)
                 {
                     case HostnamePrefix.Http:
                         hostname = $"http://{hostname}";
@@ -185,7 +230,7 @@ namespace Philosopher.Multiplat.Pages
                     default:
                         break;
                 }
-                
+
                 bool maybeHasPort = inputs.Skip(1).Take(1).FirstOrDefault() != null;
                 if (maybeHasPort)
                 {
@@ -200,7 +245,7 @@ namespace Philosopher.Multiplat.Pages
                     }
                 }
                 else
-                {                    
+                {
                     await ChangeServer(hostname, Constants.DEFAULT_PORT);
                 }
             }
@@ -208,19 +253,8 @@ namespace Philosopher.Multiplat.Pages
 
         private async Task ChangeServer(string hostname, uint portNum)
         {
-            DataService.ChangeHostname(hostname, portNum);
-            using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(20)))
-            {
-                List<ServerScript> newScripts = await DataService.GetScripts(cts.Token);
-                List<ServerScriptVm> bindableScripts = newScripts.Select(x => new ServerScriptVm(x)).ToList();
-                ScriptList.Clear();
-                foreach (var scr in bindableScripts)
-                {
-                    ScriptList.Add(scr);
-                }
-                Settings.HostnameSetting = hostname;
-                Settings.PortSetting = portNum;
-            }
+            DataService.ChangeHostName(hostname, portNum);
+            await UpdateScripts();
         }
 
         //todo: replace event with commanding model. we've probably got memory leaks on this event subscription
@@ -232,28 +266,35 @@ namespace Philosopher.Multiplat.Pages
                 return;
             }
 
-            using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(20)))
+            try
             {
-                ListView list = sender as ListView;
-                Cell viewCell = ((IReadOnlyList<Cell>)e.Group).FirstOrDefault(x => x.BindingContext == item);
-                item.IsLoading = true;
-                try
+                using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(20)))
                 {
-                    string output = (await DataService.CallServerScript(item, cts.Token)).Trim();
-                    MostRecentServerResponse = output;
-                    item.LastServerResponse = output;
+                    ListView list = sender as ListView;
+                    Cell viewCell = ((IReadOnlyList<Cell>) e.Group).FirstOrDefault(x => x.BindingContext == item);
+                    item.IsLoading = true;
+                    try
+                    {
+                        string output = (await DataService.CallServerScript(item, cts.Token)).Trim();
+                        MostRecentServerResponse = output;
+                        item.LastServerResponse = output;
+                    }
+                    catch (Exception ex)
+                    {
+                        item.IsLoading = false;
+                        item.LastServerResponse = $"Error: {ex.ToString()}";
+                    }
+                    finally
+                    {
+                        item.IsLoading = false;
+                        await Task.Delay(TimeSpan.FromSeconds(10));
+                        item.LastServerResponse = "";
+                    }
                 }
-                catch (Exception ex)
-                {
-                    item.IsLoading = false;
-                    item.LastServerResponse = $"Error: {ex.ToString()}";
-                }
-                finally
-                {
-                    item.IsLoading = false;
-                    await Task.Delay(TimeSpan.FromSeconds(10));
-                    item.LastServerResponse = "";
-                }
+            }
+            catch (OperationCanceledException ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Changing server timed out. Details:\n" + ex.ToString());                
             }
         }
 

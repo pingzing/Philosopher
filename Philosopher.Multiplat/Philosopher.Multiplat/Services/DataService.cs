@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Net;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -11,12 +12,12 @@ using Philosopher.Multiplat.Models;
 
 namespace Philosopher.Multiplat.Services
 {
-    public class DataService : INotifyPropertyChanged
+    public class DataService : IDataService
     {
         private const string GET_SCRIPT_ENDPOINT = "/scr";
         private const string CALL_SCRIPT_ENDPOINT = "/scr/{0}";
 
-        private string _baseUrl;
+        private string _baseUrl;        
 
         public string BaseUrl
         {
@@ -30,23 +31,33 @@ namespace Philosopher.Multiplat.Services
                 }
             }
         }
-        private readonly HttpClient _client;
+        private HttpClient _client;
 
-        public DataService() : this("http://localhost", 3000) { }
-
-        public DataService(string hostname, uint portNumber)
+        public IDataService Create()
         {
-            BaseUrl = $"{hostname}:{portNumber}";            
-            _client = new HttpClient();                     
+            return Create("http://localhost", 3000);
         }
 
-        public void ChangeHostname(string hostname, uint portNumber = 3000)
+        public IDataService Create(string hostname, uint portNumber)
+        {
+            BaseUrl = $"{hostname}:{portNumber}";            
+            _client = new HttpClient();
+            return this;
+        }
+
+        public void ChangeHostName(string hostname, uint portNumber = 3000)
         {
             BaseUrl = $"{hostname}:{portNumber}";
         }
 
-        //Can return null.
-        public async Task<List<ServerScript>> GetScripts(CancellationToken token)
+        public void Login(string user, string pass)
+        {
+            NetworkCredential credential = new NetworkCredential(user, pass);
+            HttpClientHandler handler = new HttpClientHandler {Credentials = credential};
+            _client = new HttpClient(handler);
+        }
+        
+        public async Task<ResultOrErrorResponse<List<ServerScript>>> GetScripts(CancellationToken token)
         {
             Uri getScriptUri = new Uri($"{BaseUrl}{GET_SCRIPT_ENDPOINT}");
             try
@@ -56,17 +67,26 @@ namespace Philosopher.Multiplat.Services
                 {
                     string responseBody = await response.Content.ReadAsStringAsync();
                     List<ServerScript> scripts = JsonConvert.DeserializeObject<List<ServerScript>>(responseBody);
-                    return scripts;
+                    return new ResultOrErrorResponse<List<ServerScript>>(scripts);
                 }
                 else
                 {
-                    return null;
+                    string responseString = await response.Content.ReadAsStringAsync();
+                    return new ResultOrErrorResponse<List<ServerScript>>(new GenericHttpResponse
+                    {
+                        HttpStatusCode = (int)response.StatusCode,
+                        ResponseMessage = responseString
+                    });
                 }
             }
-            catch(COMException ex)
+            catch(Exception ex) when(ex is COMException || ex is WebException)
             {
                 System.Diagnostics.Debug.WriteLine("GetScripts failed because: " + ex.ToString());
-                return null;
+                return new ResultOrErrorResponse<List<ServerScript>>(new GenericHttpResponse
+                {
+                    ResponseMessage = "Network request failed. Details: " + ex.ToString(),
+                    HttpStatusCode = 404
+                });
             }
         }
 

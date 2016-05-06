@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Philosopher.Multiplat.UWP.Services;
 
 namespace Philosopher.Multiplat.UWP
 {
@@ -65,9 +66,10 @@ namespace Philosopher.Multiplat.UWP
                     typeof (Acr.UserDialogs.UserDialogs).GetTypeInfo().Assembly,
                     typeof (GalaSoft.MvvmLight.ViewModelBase).GetTypeInfo().Assembly
                 };
-                Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-                //Also required for .NET Native.                
+                Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
                 
+                //Inform .NET Native of DependencyServices
+                Xamarin.Forms.DependencyService.Register<UwpDataService>();                                    
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
