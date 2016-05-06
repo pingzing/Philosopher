@@ -21,6 +21,9 @@ namespace Philosopher.Multiplat.Helpers
         private const string PortKey = "port_key";
         private static readonly long PortDefault = 3000;
 
+        private const string WakeupTargetsKey = "wakeup_targets_key";
+        private static readonly string WakeupTargetsDefault = "[]";
+
         #endregion
 
         public static string HostnameSetting
@@ -33,6 +36,12 @@ namespace Philosopher.Multiplat.Helpers
         {
             get { return AppSettings.GetValueOrDefault(PortKey, PortDefault); }
             set { AppSettings.AddOrUpdateValue(PortKey, value); }
+        }
+
+        public static string WakeupTargets
+        {
+            get { return AppSettings.GetValueOrDefault(WakeupTargetsKey, WakeupTargetsDefault); }
+            set { AppSettings.AddOrUpdateValue(WakeupTargetsKey, value); }
         }
 
     }

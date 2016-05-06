@@ -19,7 +19,7 @@ namespace Philosopher.Multiplat
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            // Handle when your app starts            
         }
 
         protected override void OnSleep()

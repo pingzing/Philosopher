@@ -67,6 +67,7 @@ namespace Philosopher.Multiplat.UWP
                 };
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
                 //Also required for .NET Native.                
+                
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

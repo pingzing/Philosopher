@@ -92,12 +92,15 @@ namespace Philosopher.Multiplat.Pages
             DataService = new DataService(Settings.HostnameSetting, (uint)Settings.PortSetting);
             this.BindingContext = this;
             this.Appearing += MainPage_OnAppearing;
-            this.ConnectedToLink.Clicked += ConnectedToLink_OnClicked;
-            this.Disappearing += MainPage_Disappearing;
+            this.Disappearing -= MainPage_Disappearing;
+
         }
 
         private async void MainPage_OnAppearing(object sender, EventArgs e)
-        {
+        {            
+            this.ConnectedToLink.Clicked += ConnectedToLink_OnClicked;
+            this.Disappearing += MainPage_Disappearing;
+
             using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(20)))
             {
                 try
@@ -114,14 +117,21 @@ namespace Philosopher.Multiplat.Pages
         }
 
         private void MainPage_Disappearing(object sender, EventArgs e)
-        {
-            string[] urlComponents = DataService.BaseUrl.Replace("http://", "").Split(':');
-            Settings.HostnameSetting = urlComponents[0];
-            Settings.PortSetting = UInt32.Parse(urlComponents[1]);
-
-            this.Appearing -= MainPage_OnAppearing;
-            this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;
-            this.Disappearing -= MainPage_Disappearing;
+        {            
+            if(DataService.BaseUrl.Contains("://"))
+            {
+                string[] urlComponents = DataService.BaseUrl.Split(':');
+                Settings.HostnameSetting = urlComponents[0] + ":" + urlComponents[1];
+                Settings.PortSetting = UInt32.Parse(urlComponents[2]);
+            }
+            else
+            {
+                string[] urlComponents = DataService.BaseUrl.Split(':');
+                Settings.HostnameSetting = urlComponents[0];
+                Settings.PortSetting = UInt32.Parse(urlComponents[1]);
+            }            
+            
+            this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;            
         }
 
         private async void ConnectedToLink_OnClicked(object sender, EventArgs e)
@@ -129,7 +139,33 @@ namespace Philosopher.Multiplat.Pages
             PromptResult result = await UserDialogs.Instance.PromptAsync(HostnamePromptConfig);            
             if (result != null && result.Ok && !String.IsNullOrWhiteSpace(result.Text))
             {
-                string text = result.Text.Replace("http://", "");
+                string text = result.Text;
+                HostnamePrefix prefix;
+                if(text.Contains("http://"))
+                {
+                    prefix = HostnamePrefix.Http;
+                }
+                else if(text.Contains("https://"))
+                {
+                    prefix = HostnamePrefix.Https;
+                }
+                else
+                {
+                    prefix = HostnamePrefix.None;
+                }
+                switch(prefix)
+                {
+                    case HostnamePrefix.Http:
+                        text = text.Replace("http://", "");
+                        break;
+                    case HostnamePrefix.Https:
+                        text = text.Replace("https://", "");
+                        break;
+                    case HostnamePrefix.None:
+                    default:
+                        break;
+                }
+
                 string[] inputs = text.Split(':');
                 string hostname = inputs.FirstOrDefault();
                 if (hostname == null)
@@ -137,7 +173,19 @@ namespace Philosopher.Multiplat.Pages
                     await UserDialogs.Instance.AlertAsync("You must enter a hostname.", "Invalid hostname");
                     return;
                 }
-                hostname = $"http://{hostname}";
+                switch(prefix)
+                {
+                    case HostnamePrefix.Http:
+                        hostname = $"http://{hostname}";
+                        break;
+                    case HostnamePrefix.Https:
+                        hostname = $"https://{hostname}";
+                        break;
+                    case HostnamePrefix.None:
+                    default:
+                        break;
+                }
+                
                 bool maybeHasPort = inputs.Skip(1).Take(1).FirstOrDefault() != null;
                 if (maybeHasPort)
                 {
@@ -215,6 +263,13 @@ namespace Philosopher.Multiplat.Pages
                 ? GridLength.Auto
                 : ResponseShrunkHeight;
         }
+    }
+
+    public enum HostnamePrefix
+    {
+        None,
+        Http,
+        Https
     }
 
     public class ServerScriptVm : ServerScript, INotifyPropertyChanged

@@ -3,19 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Philosopher.Multiplat.Pages.WakePage">
   <StackLayout>
-    <Entry x:Name="HostnameEntry" 
-           Placeholder="Hostname or IP"
+    <Label x:Name="HostnameLabel"
+           Text="Hostname or IP Address"
+           Style="{DynamicResource CaptionStyle}"/>
+    <Entry x:Name="HostnameEntry"
+           Placeholder="e.g. http://www.test.com"
            Text="{Binding HostName, Mode=TwoWay}"/>
-    <Entry x:Name="PortNumberEntry" 
-           Placeholder="Port Number"
+
+    <Label x:Name="PortNumberLabel"
+           Text="Port number"
+           Style="{DynamicResource CaptionStyle}"/>
+    <Entry x:Name="PortNumberEntry"
+           Placeholder="e.g. 4334"
            Text="{Binding PortNumber, Mode=TwoWay}"/>
+
+    <Label x:Name="MacLabel"
+           Text="MAC Address"
+           Style="{DynamicResource CaptionStyle}"/>
     <Entry x:Name="MacEntry"
-           Placeholder="MAC Address"
+           Placeholder="e.g. 12:34:45:AF:FF:CD"
            Text="{Binding MacAddress, Mode=TwoWay}"/>
+
     <Button x:Name="SendButton"
             Text="Send"/>
-    <ListView x:Name="RecentListView" 
+    <ListView x:Name="RecentListView"
               Header="Recent"
-              ItemsSource="{Binding SavedWakeupTargets}"/>
+              ItemsSource="{Binding SavedWakeupTargets}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Hostname}"/><Label Text=":"/><Label Text="{Binding PortNumber}"/>                
+              </StackLayout>
+              <Label Text="{Binding MacAddress}"
+                     Style="{DynamicResource CaptionStyle}"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+
+    </ListView>
+
   </StackLayout>
 </ContentPage>

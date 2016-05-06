@@ -98,7 +98,7 @@
 
                 </Grid>
               </Frame>
-              <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}" Color="Accent"/>
+              <ActivityIndicator IsVisible="{Binding IsLoading}" IsRunning="{Binding IsLoading}" Color="White"/>
             </Grid>
           </ViewCell>
         </DataTemplate>

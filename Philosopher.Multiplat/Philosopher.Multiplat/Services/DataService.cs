@@ -36,8 +36,8 @@ namespace Philosopher.Multiplat.Services
 
         public DataService(string hostname, uint portNumber)
         {
-            BaseUrl = $"{hostname}:{portNumber}";
-            _client = new HttpClient();
+            BaseUrl = $"{hostname}:{portNumber}";            
+            _client = new HttpClient();                     
         }
 
         public void ChangeHostname(string hostname, uint portNumber = 3000)
