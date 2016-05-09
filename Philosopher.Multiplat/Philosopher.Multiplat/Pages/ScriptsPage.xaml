@@ -3,21 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Philosopher.Multiplat.Pages.ScriptsPage"
              xmlns:conv="clr-namespace:Philosopher.Multiplat.Converters;assembly=Philosopher.Multiplat"
-             xmlns:userdialogs="clr-namespace:Acr.UserDialogs;assembly=Acr.UserDialogs.Interface"                          
+             xmlns:userdialogs="clr-namespace:Acr.UserDialogs;assembly=Acr.UserDialogs.Interface"
              Padding="0">
 
   <ContentPage.Resources>
-    <ResourceDictionary>      
-      <conv:BoolNegationConverter x:Key="BoolNegationConverter"/>   
-      <userdialogs:PromptConfig x:Name="HostnamePromptConfig" x:Key="HostnamePromptConfig" 
+    <ResourceDictionary>
+      <conv:BoolNegationConverter x:Key="BoolNegationConverter"/>
+      <userdialogs:PromptConfig x:Name="HostnamePromptConfig" x:Key="HostnamePromptConfig"
                                 Title="Enter server info"
                                 Message="Enter the server's hostname and (optionally) port number."
                                 Placeholder="Hostname"/>
-    <conv:TrueIfGrEqualConverter x:Key="TrueIfGrEqualConverter"/>
+      <conv:TrueIfGrEqualConverter x:Key="TrueIfGrEqualConverter"/>
     </ResourceDictionary>
   </ContentPage.Resources>
 
-  
+
   <Grid RowSpacing="10">
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
@@ -31,25 +31,31 @@
               Style="{DynamicResource SubtitleStyle}"
               Text="Connected to: "/>
 
-      <Button x:Name="ConnectedToLink"              
-              Text="{Binding DataService.BaseUrl}"
-              BackgroundColor="Transparent"
-              BorderWidth="1"/>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+        <Button x:Name="ConnectedToLink"
+                Text="{Binding DataService.BaseUrl}"
+                BackgroundColor="Transparent"
+                BorderWidth="1"/>
+              
+        <Button x:Name="RefreshButton"               
+                Text="Refresh"
+                Clicked="Refresh_OnClicked"/>          
+      </StackLayout>      
     </StackLayout>
-    
+
     <ScrollView Grid.Row="1">
-        <Label x:Name="ResponseLabel"  
-               Height="{Binding ResponseLabelHeight, Mode=TwoWay}"
-               Style="{DynamicResource ListItemTextStyle}"
-               Text="{Binding MostRecentServerResponse}"/>
-        </ScrollView>
-      
-      <Button x:Name="ExpandHideButton"
-              Grid.Row="2"
-              Text="Expand/Hide"
-              Clicked="ExpandHideButton_OnClicked"
-              VerticalOptions="End"
-              IsVisible="{Binding ResponseLabelHeight, Converter={StaticResource TrueIfGrEqualConverter}, ConverterParameter=28}"/>
+      <Label x:Name="ResponseLabel"
+             Height="{Binding ResponseLabelHeight, Mode=TwoWay}"
+             Style="{DynamicResource ListItemTextStyle}"
+             Text="{Binding MostRecentServerResponse}"/>
+    </ScrollView>
+
+    <Button x:Name="ExpandHideButton"
+            Grid.Row="2"
+            Text="Expand/Hide"
+            Clicked="ExpandHideButton_OnClicked"
+            VerticalOptions="End"
+            IsVisible="{Binding ResponseLabelHeight, Converter={StaticResource TrueIfGrEqualConverter}, ConverterParameter=28}"/>
 
     <ListView x:Name="ScriptsListView"
               Grid.Row="3"
@@ -101,8 +107,7 @@
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
-
     </ListView>
-
   </Grid>
+
 </ContentPage>

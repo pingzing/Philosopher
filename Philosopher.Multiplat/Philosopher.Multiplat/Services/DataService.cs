@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
@@ -97,7 +98,7 @@ namespace Philosopher.Multiplat.Services
                 }
                 else
                 {
-                    string responseString = await response.Content.ReadAsStringAsync();
+                    string responseString = response.Headers?.WwwAuthenticate?.FirstOrDefault()?.Parameter ?? "nothing";
                     return new ResultOrErrorResponse<List<ServerScript>>(new GenericHttpResponse
                     {
                         HttpStatusCode = (int)response.StatusCode,

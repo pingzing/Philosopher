@@ -21,6 +21,7 @@ namespace Philosopher.Multiplat.Pages
         public static int ResponseShrunkHeight => 25;
         public static int ScriptButtonsShrunkHeight => 0;
         private bool _isResponseBoxExpanded = false;
+        private bool _firstLoad = true;
 
         private IDataService _dataService;
         public IDataService DataService
@@ -109,19 +110,26 @@ namespace Philosopher.Multiplat.Pages
                 .Create(Settings.HostnameSetting, (uint) Settings.PortSetting);
             this.BindingContext = this;
             this.Appearing += MainPage_OnAppearing;
-            this.Disappearing -= MainPage_Disappearing;
-        }
+            this.Disappearing -= MainPage_Disappearing;                                               
+
+            
+        }               
 
         private async void MainPage_OnAppearing(object sender, EventArgs e)
-        {
+        {            
             this.ConnectedToLink.Clicked += ConnectedToLink_OnClicked;
             this.Disappearing += MainPage_Disappearing;
 
-            await UpdateScripts();
+            if (_firstLoad)
+            {
+                _firstLoad = false;
+                await UpdateScripts();
+            }
         }
 
         private async Task UpdateScripts()
         {
+            this.IsBusy = true;
             try
             {
                 using (CancellationTokenSource cts = new CancellationTokenSource(TimeSpan.FromSeconds(30)))
@@ -139,7 +147,8 @@ namespace Philosopher.Multiplat.Pages
                                     ConnectedToLink_OnClicked(null, null);
                                     return;
                                 }
-                                List<ServerScriptVm> bindableScripts = scripts.Select(x => new ServerScriptVm(x)).ToList();
+                                List<ServerScriptVm> bindableScripts =
+                                    scripts.Select(x => new ServerScriptVm(x)).ToList();
                                 ScriptList = new ObservableCollection<ServerScript>(bindableScripts);
                                 return;
                             }
@@ -152,30 +161,26 @@ namespace Philosopher.Multiplat.Pages
                         }
                         else if ((HttpStatusCode) result.ErrorResponse.HttpStatusCode == HttpStatusCode.Unauthorized)
                         {
-                            Device.OnPlatform(Default: async () =>
-                            {
-                                var dialogResult = await UserDialogs.Instance.LoginAsync("Authorization required",
-                                $"Access denied. The server says \"{result.ErrorResponse.ResponseMessage}\"");
-                                if (dialogResult != null
-                                    && dialogResult.Ok
-                                    && !String.IsNullOrWhiteSpace(dialogResult.LoginText)
-                                    && !String.IsNullOrWhiteSpace(dialogResult.Password))
-                                {
-                                    DataService.Login(dialogResult.LoginText, dialogResult.Password);
-                                    //loop and try again
-                                }
-                                else if(dialogResult == null || dialogResult.Ok == false)
-                                {
-                                    cts.Cancel();
-                                    return;
-                                }
-                            },
-                            WinPhone: () => //Let the HttpClient's AllowUI flag handle this automatically
+                            if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
                             {
                                 cts.Cancel();
                                 return;
-                            });
-                            
+                            }
+                            var dialogResult = await UserDialogs.Instance.LoginAsync("Authorization required",
+                                $"Access denied. The server says \"{result.ErrorResponse.ResponseMessage}\"");
+                            if (dialogResult != null
+                                && dialogResult.Ok
+                                && !String.IsNullOrWhiteSpace(dialogResult.LoginText)
+                                && !String.IsNullOrWhiteSpace(dialogResult.Password))
+                            {
+                                DataService.Login(dialogResult.LoginText, dialogResult.Password);
+                                //loop and try again
+                            }
+                            else if (dialogResult == null || dialogResult.Ok == false)
+                            {
+                                cts.Cancel();
+                                return;
+                            }
                         }
                         else
                         {
@@ -187,6 +192,10 @@ namespace Philosopher.Multiplat.Pages
             catch (OperationCanceledException ex)
             {
                 System.Diagnostics.Debug.WriteLine("UpdateScripts timed out. Details:\n" + ex.ToString());
+            }
+            finally
+            {
+                this.IsBusy = false;
             }
         }
 
@@ -327,6 +336,11 @@ namespace Philosopher.Multiplat.Pages
                 : ResponseShrunkHeight;
 
             OnPropertyChanged(nameof(IsListVisible));
+        }
+
+        private async void Refresh_OnClicked(object sender, EventArgs e)
+        {            
+            await UpdateScripts();            
         }
     }
 

@@ -4,5 +4,5 @@
              xmlns:pages="clr-namespace:Philosopher.Multiplat.Pages;assembly=Philosopher.Multiplat"
              x:Class="Philosopher.Multiplat.Pages.MainPage">  
   <pages:ScriptsPage Title="Scripts"/>
-  <pages:WakePage Title="Wakeup"/>
+  <pages:WakePage Title="Wakeup"/>  
 </TabbedPage>
