@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Philosopher.Multiplat.Models;
+using Philosopher.Multiplat.Helpers;
 
 namespace Philosopher.Multiplat.Services
 {
@@ -18,7 +19,6 @@ namespace Philosopher.Multiplat.Services
         private const string CALL_SCRIPT_ENDPOINT = "/scr/{0}";
 
         private string _baseUrl;        
-
         public string BaseUrl
         {
             get { return _baseUrl; }
@@ -31,6 +31,21 @@ namespace Philosopher.Multiplat.Services
                 }
             }
         }
+
+        private uint _portNumber;
+        public uint PortNumber
+        {
+            get { return _portNumber; }
+            set
+            {
+                if(_portNumber != value)
+                {
+                    _portNumber = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         private HttpClient _client;
 
         public IDataService Create()
@@ -40,14 +55,16 @@ namespace Philosopher.Multiplat.Services
 
         public IDataService Create(string hostname, uint portNumber)
         {
-            BaseUrl = $"{hostname}:{portNumber}";            
+            BaseUrl = $"{hostname}";
+            PortNumber = portNumber;           
             _client = new HttpClient();
             return this;
         }
 
         public void ChangeHostName(string hostname, uint portNumber = 3000)
         {
-            BaseUrl = $"{hostname}:{portNumber}";
+            BaseUrl = $"{hostname}";
+            PortNumber = portNumber;
         }
 
         public void Login(string user, string pass)
@@ -59,7 +76,16 @@ namespace Philosopher.Multiplat.Services
         
         public async Task<ResultOrErrorResponse<List<ServerScript>>> GetScripts(CancellationToken token)
         {
-            Uri getScriptUri = new Uri($"{BaseUrl}{GET_SCRIPT_ENDPOINT}");
+            string uriString = $"{BaseUrl}:{PortNumber}{GET_SCRIPT_ENDPOINT}";
+            Uri getScriptUri = null;
+            if (Uri.IsWellFormedUriString(uriString, UriKind.Absolute))
+            {
+                getScriptUri = new Uri($"{BaseUrl}:{PortNumber}{GET_SCRIPT_ENDPOINT}");
+            }
+            else
+            {
+                getScriptUri = new Uri($"http://localhost:{Constants.DEFAULT_PORT}{GET_SCRIPT_ENDPOINT}");
+            }
             try
             {
                 HttpResponseMessage response = await _client.GetAsync(getScriptUri, token);
@@ -92,7 +118,7 @@ namespace Philosopher.Multiplat.Services
 
         public async Task<string> CallServerScript(ServerScript script, CancellationToken token)
         {
-            string uriString = BaseUrl + String.Format(CALL_SCRIPT_ENDPOINT, script.Name);
+            string uriString = $"{BaseUrl}:{PortNumber}{String.Format(CALL_SCRIPT_ENDPOINT, script.Name)}";
             Uri callScriptUri = new Uri(uriString);
             try
             {

@@ -19,6 +19,8 @@ namespace Philosopher.Multiplat.Pages
     public partial class ScriptsPage : ContentPage, INotifyPropertyChanged
     {
         public static int ResponseShrunkHeight => 25;
+        public static int ScriptButtonsShrunkHeight => 0;
+        private bool _isResponseBoxExpanded = false;
 
         private IDataService _dataService;
         public IDataService DataService
@@ -67,9 +69,20 @@ namespace Philosopher.Multiplat.Pages
         {
             get { return _serverResponseBlockHeight; }
             set
-            {
+            {                
                 _serverResponseBlockHeight = value;
                 OnPropertyChanged(nameof(ServerResponseBlockHeight));
+            }
+        }
+
+        private GridLength _scriptButtonsRowHeight = new GridLength(1, GridUnitType.Star);
+        public GridLength ScriptButtonsRowHeight
+        {
+            get { return _scriptButtonsRowHeight; }
+            set
+            {
+                _scriptButtonsRowHeight = value;
+                OnPropertyChanged(nameof(ScriptButtonsRowHeight));
             }
         }
 
@@ -86,6 +99,8 @@ namespace Philosopher.Multiplat.Pages
                 }
             }
         }
+
+        public bool IsListVisible => !_isResponseBoxExpanded;
 
         public ScriptsPage()
         {
@@ -137,16 +152,30 @@ namespace Philosopher.Multiplat.Pages
                         }
                         else if ((HttpStatusCode) result.ErrorResponse.HttpStatusCode == HttpStatusCode.Unauthorized)
                         {
-                            var dialogResult = await UserDialogs.Instance.LoginAsync("Authorization required",
-                                $"Access denied. The server says \"{result.ErrorResponse.ResponseMessage}\"");
-                            if (dialogResult != null
-                                && dialogResult.Ok
-                                && !String.IsNullOrWhiteSpace(dialogResult.LoginText)
-                                && !String.IsNullOrWhiteSpace(dialogResult.Password))
+                            Device.OnPlatform(Default: async () =>
                             {
-                                DataService.Login(dialogResult.LoginText, dialogResult.Password);
-                                //loop and try again
-                            }
+                                var dialogResult = await UserDialogs.Instance.LoginAsync("Authorization required",
+                                $"Access denied. The server says \"{result.ErrorResponse.ResponseMessage}\"");
+                                if (dialogResult != null
+                                    && dialogResult.Ok
+                                    && !String.IsNullOrWhiteSpace(dialogResult.LoginText)
+                                    && !String.IsNullOrWhiteSpace(dialogResult.Password))
+                                {
+                                    DataService.Login(dialogResult.LoginText, dialogResult.Password);
+                                    //loop and try again
+                                }
+                                else if(dialogResult == null || dialogResult.Ok == false)
+                                {
+                                    cts.Cancel();
+                                    return;
+                                }
+                            },
+                            WinPhone: () => //Let the HttpClient's AllowUI flag handle this automatically
+                            {
+                                cts.Cancel();
+                                return;
+                            });
+                            
                         }
                         else
                         {
@@ -163,18 +192,8 @@ namespace Philosopher.Multiplat.Pages
 
         private void MainPage_Disappearing(object sender, EventArgs e)
         {
-            if (DataService.BaseUrl.Contains("://"))
-            {
-                string[] urlComponents = DataService.BaseUrl.Split(':');
-                Settings.HostnameSetting = urlComponents[0] + ":" + urlComponents[1];
-                Settings.PortSetting = UInt32.Parse(urlComponents[2]);
-            }
-            else
-            {
-                string[] urlComponents = DataService.BaseUrl.Split(':');
-                Settings.HostnameSetting = urlComponents[0];
-                Settings.PortSetting = UInt32.Parse(urlComponents[1]);
-            }
+            Settings.HostnameSetting = DataService.BaseUrl;
+            Settings.PortSetting = DataService.PortNumber;
 
             this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;
         }
@@ -257,7 +276,8 @@ namespace Philosopher.Multiplat.Pages
             await UpdateScripts();
         }
 
-        //todo: replace event with commanding model. we've probably got memory leaks on this event subscription
+        //todo: replace event with commanding model. we've probably got memory leaks on this and other event subscriptions
+        //alternately, do event subscriptions in constructor
         private async void ScriptsListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             ServerScriptVm item = e.Item as ServerScriptVm;
@@ -300,9 +320,13 @@ namespace Philosopher.Multiplat.Pages
 
         private void ExpandHideButton_OnClicked(object sender, EventArgs e)
         {
-            ServerResponseBlockHeight = ServerResponseBlockHeight.Value == ResponseShrunkHeight
-                ? GridLength.Auto
+            _isResponseBoxExpanded = !_isResponseBoxExpanded;
+
+            ServerResponseBlockHeight = _isResponseBoxExpanded
+                ? new GridLength(9, GridUnitType.Star)
                 : ResponseShrunkHeight;
+
+            OnPropertyChanged(nameof(IsListVisible));
         }
     }
 

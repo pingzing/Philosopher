@@ -1,6 +1,6 @@
 ﻿{
   "dependencies": {
-    "Acr.UserDialogs": "4.2.1",
+    "Acr.UserDialogs": "5.1.0",
     "Microsoft.Bcl": "1.1.10",
     "Microsoft.Bcl.Build": "1.0.21",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
