@@ -22,6 +22,7 @@ namespace Philosopher.Multiplat.Pages
         public static int ScriptButtonsShrunkHeight => 0;
         private bool _isResponseBoxExpanded = false;
         private bool _firstLoad = true;
+        private List<ToolbarItem> _toolbarItems = new List<ToolbarItem>();
 
         private readonly IAuthService _authService;
 
@@ -118,25 +119,32 @@ namespace Philosopher.Multiplat.Pages
                     Account acct = accounts.First();
                     DataService.Login(acct.Username, acct.Password);
                 }
-                //else pop up UI to allow user to choose saved login
+                //else pop up UI to allow user to choose saved login or something
             }            
 
-            this.BindingContext = this;
-            this.Appearing += MainPage_OnAppearing;
-            this.Disappearing -= MainPage_Disappearing;                                                           
-        }               
+            this.BindingContext = this;   
+            
+            foreach(var tool in ToolbarItems)
+            {
+                _toolbarItems.Add(tool);
+            }
+            ToolbarItems.Clear();
+        }
 
-        private async void MainPage_OnAppearing(object sender, EventArgs e)
-        {            
+        protected override async void OnAppearing()
+        {
             this.ConnectedToLink.Clicked += ConnectedToLink_OnClicked;
-            this.Disappearing += MainPage_Disappearing;
 
             if (_firstLoad)
             {
                 _firstLoad = false;
                 await UpdateScripts();
             }
-        }
+            foreach (var tool in _toolbarItems)
+            {
+               ToolbarItems.Add(tool);
+            }
+        }        
 
         private async Task UpdateScripts()
         {
@@ -207,16 +215,17 @@ namespace Philosopher.Multiplat.Pages
             }
         }
 
-        private void MainPage_Disappearing(object sender, EventArgs e)
+        protected override void OnDisappearing()
         {
             Settings.HostnameSetting = DataService.BaseUrl;
             Settings.PortSetting = DataService.PortNumber;
 
             this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;
-        }
+            ToolbarItems.Clear();
+        }       
 
         private async void ConnectedToLink_OnClicked(object sender, EventArgs e)
-        {
+        {            
             PromptResult result = await UserDialogs.Instance.PromptAsync(HostnamePromptConfig);
             if (result != null && result.Ok && !String.IsNullOrWhiteSpace(result.Text))
             {

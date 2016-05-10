@@ -81,7 +81,7 @@ namespace Philosopher.Multiplat.Pages
             this.BindingContext = this;
             _magicPacketService = new MagicPacketService();
             _settingsService = new SettingsService();
-            SavedWakeupTargets = new ObservableCollection<WakeupTarget>(_settingsService.GetWakeupTargets());
+            SavedWakeupTargets = new ObservableCollection<WakeupTarget>(_settingsService.GetWakeupTargets());            
         }
 
         private void MacEntry_TextChanged(object sender, TextChangedEventArgs e)
@@ -115,7 +115,7 @@ namespace Philosopher.Multiplat.Pages
             PortNumberEntry.TextChanged += PortNumberEntry_TextChanged;
             MacEntry.TextChanged += MacEntry_TextChanged;
             MacEntry.Unfocused += MacEntry_Unfocused;
-            RecentListView.ItemTapped += RecentListView_ItemTapped;
+            RecentListView.ItemTapped += RecentListView_ItemTapped;            
         }       
 
         protected override void OnDisappearing()
