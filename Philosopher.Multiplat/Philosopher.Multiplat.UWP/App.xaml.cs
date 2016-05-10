@@ -69,7 +69,8 @@ namespace Philosopher.Multiplat.UWP
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
                 
                 //Inform .NET Native of DependencyServices
-                Xamarin.Forms.DependencyService.Register<UwpDataService>();                                    
+                Xamarin.Forms.DependencyService.Register<UwpDataService>();
+                Xamarin.Forms.DependencyService.Register<AuthService>();
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

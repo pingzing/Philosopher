@@ -65,7 +65,7 @@ namespace Philosopher.Multiplat.UWP.Services
             BaseUrl = $"{hostname}";
             PortNumber = portNumber;
             _allowSelfSignedCertFilter = new HttpBaseProtocolFilter();
-            _allowSelfSignedCertFilter.AllowUI = true;
+            _allowSelfSignedCertFilter.AllowUI = false;
             _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.Untrusted);
             _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.InvalidName);
 
@@ -86,6 +86,10 @@ namespace Philosopher.Multiplat.UWP.Services
                 Password = pass,
                 UserName = user
             };
+            _allowSelfSignedCertFilter = new HttpBaseProtocolFilter();
+            _allowSelfSignedCertFilter.AllowUI = false;
+            _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.Untrusted);
+            _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.InvalidName);
             _allowSelfSignedCertFilter.ServerCredential = credential;
             _client = new HttpClient(_allowSelfSignedCertFilter);
         }

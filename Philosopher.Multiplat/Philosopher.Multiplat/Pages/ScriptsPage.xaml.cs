@@ -23,6 +23,8 @@ namespace Philosopher.Multiplat.Pages
         private bool _isResponseBoxExpanded = false;
         private bool _firstLoad = true;
 
+        private readonly IAuthService _authService;
+
         private IDataService _dataService;
         public IDataService DataService
         {
@@ -106,13 +108,22 @@ namespace Philosopher.Multiplat.Pages
         public ScriptsPage()
         {
             InitializeComponent();
-            DataService = DependencyService.Get<IDataService>()
-                .Create(Settings.HostnameSetting, (uint) Settings.PortSetting);
+            DataService = DependencyService.Get<IDataService>().Create(Settings.HostnameSetting, (uint) Settings.PortSetting);
+            _authService = DependencyService.Get<IAuthService>();
+            var accounts = _authService.FindAccountsForService(Constants.APP_SERVICE_ID);
+            if(accounts.Count() > 0)
+            {
+                if(accounts.Count() == 1)
+                {
+                    Account acct = accounts.First();
+                    DataService.Login(acct.Username, acct.Password);
+                }
+                //else pop up UI to allow user to choose saved login
+            }            
+
             this.BindingContext = this;
             this.Appearing += MainPage_OnAppearing;
-            this.Disappearing -= MainPage_Disappearing;                                               
-
-            
+            this.Disappearing -= MainPage_Disappearing;                                                           
         }               
 
         private async void MainPage_OnAppearing(object sender, EventArgs e)
@@ -160,12 +171,7 @@ namespace Philosopher.Multiplat.Pages
                             }
                         }
                         else if ((HttpStatusCode) result.ErrorResponse.HttpStatusCode == HttpStatusCode.Unauthorized)
-                        {
-                            if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
-                            {
-                                cts.Cancel();
-                                return;
-                            }
+                        {                            
                             var dialogResult = await UserDialogs.Instance.LoginAsync("Authorization required",
                                 $"Access denied. The server says \"{result.ErrorResponse.ResponseMessage}\"");
                             if (dialogResult != null
@@ -174,6 +180,8 @@ namespace Philosopher.Multiplat.Pages
                                 && !String.IsNullOrWhiteSpace(dialogResult.Password))
                             {
                                 DataService.Login(dialogResult.LoginText, dialogResult.Password);
+                                Account acct = new Account { Username = dialogResult.LoginText, Password = dialogResult.Password };
+                                _authService.Save(acct, Constants.APP_SERVICE_ID);
                                 //loop and try again
                             }
                             else if (dialogResult == null || dialogResult.Ok == false)

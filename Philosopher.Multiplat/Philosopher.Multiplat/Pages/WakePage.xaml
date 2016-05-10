@@ -25,7 +25,9 @@
            Text="{Binding MacAddress, Mode=TwoWay}"/>
 
     <Button x:Name="SendButton"
-            Text="Send"/>
+            Text="Send"
+            TextColor="White"
+            BackgroundColor="Accent"/>
     <ListView x:Name="RecentListView"              
               ItemsSource="{Binding SavedWakeupTargets}">
       <ListView.Header>

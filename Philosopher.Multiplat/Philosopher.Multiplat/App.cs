@@ -17,6 +17,7 @@ namespace Philosopher.Multiplat
             Device.OnPlatform(
                 iOS: DependencyService.Register<DataService>,
                 Android: DependencyService.Register<DataService>);
+            var idiom = Device.Idiom;
             // The root page of your application
             MainPage = new MainPage();
         }
