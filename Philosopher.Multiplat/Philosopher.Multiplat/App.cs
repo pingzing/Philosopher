@@ -19,7 +19,7 @@ namespace Philosopher.Multiplat
                 Android: DependencyService.Register<DataService>);
             var idiom = Device.Idiom;
             // The root page of your application
-            MainPage = new MainPage();
+            MainPage = new MainTabbedPage();
         }
 
         protected override void OnStart()
