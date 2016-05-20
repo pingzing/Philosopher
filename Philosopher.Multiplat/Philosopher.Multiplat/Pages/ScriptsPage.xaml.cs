@@ -18,11 +18,22 @@ namespace Philosopher.Multiplat.Pages
 {
     public partial class ScriptsPage : ContentPage, INotifyPropertyChanged
     {
-        public static int ResponseShrunkHeight => 25;
-        public static int ScriptButtonsShrunkHeight => 0;
+        public static int ResponseShrunkHeight
+        {
+            get
+            {
+                if (Device.OS == TargetPlatform.WinPhone)
+                {
+                    return 25;
+                }
+                else
+                {
+                    return 30;
+                }
+            }
+        }
         private bool _isResponseBoxExpanded = false;
-        private bool _firstLoad = true;
-        private List<ToolbarItem> _toolbarItems = new List<ToolbarItem>();
+        private bool _firstLoad = true;       
 
         private readonly IAuthService _authService;
 
@@ -90,7 +101,7 @@ namespace Philosopher.Multiplat.Pages
             }
         }
 
-        private double _responseLabelHeight;
+        private double _responseLabelHeight = ResponseShrunkHeight;
         public double ResponseLabelHeight
         {
             get { return _responseLabelHeight; }
@@ -100,9 +111,26 @@ namespace Philosopher.Multiplat.Pages
                 {
                     _responseLabelHeight = value;
                     OnPropertyChanged(nameof(ResponseLabelHeight));
+                    OnPropertyChanged(nameof(IsResponseLabelTooTall));
                 }
             }
         }
+
+        public bool IsResponseLabelTooTall
+        {
+            get
+            {
+                if (Device.OS == TargetPlatform.WinPhone)
+                {
+                    return ResponseLabelHeight > 28;
+                }
+                else
+                {
+                    return ResponseLabelHeight > 62;
+                }
+            }
+        }
+        
 
         public bool IsListVisible => !_isResponseBoxExpanded;
 
@@ -111,10 +139,10 @@ namespace Philosopher.Multiplat.Pages
             InitializeComponent();
             DataService = DependencyService.Get<IDataService>().Create(Settings.HostnameSetting, (uint) Settings.PortSetting);
             _authService = DependencyService.Get<IAuthService>();
-            var accounts = _authService.FindAccountsForService(Constants.APP_SERVICE_ID);
-            if(accounts.Count() > 0)
+            var accounts = _authService.FindAccountsForService(Constants.APP_SERVICE_ID).ToList();
+            if(accounts.Any())
             {
-                if(accounts.Count() == 1)
+                if(accounts.Count == 1)
                 {
                     Account acct = accounts.First();
                     DataService.Login(acct.Username, acct.Password);
@@ -122,13 +150,7 @@ namespace Philosopher.Multiplat.Pages
                 //else pop up UI to allow user to choose saved login or something
             }            
 
-            this.BindingContext = this;   
-            
-            foreach(var tool in ToolbarItems)
-            {
-                _toolbarItems.Add(tool);
-            }
-            ToolbarItems.Clear();
+            this.BindingContext = this;                          
         }
 
         protected override async void OnAppearing()
@@ -139,11 +161,7 @@ namespace Philosopher.Multiplat.Pages
             {
                 _firstLoad = false;
                 await UpdateScripts();
-            }
-            foreach (var tool in _toolbarItems)
-            {
-               ToolbarItems.Add(tool);
-            }
+            }            
         }        
 
         private async Task UpdateScripts()
@@ -220,8 +238,7 @@ namespace Philosopher.Multiplat.Pages
             Settings.HostnameSetting = DataService.BaseUrl;
             Settings.PortSetting = DataService.PortNumber;
 
-            this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;
-            ToolbarItems.Clear();
+            this.ConnectedToLink.Clicked -= ConnectedToLink_OnClicked;            
         }       
 
         private async void ConnectedToLink_OnClicked(object sender, EventArgs e)
@@ -355,7 +372,7 @@ namespace Philosopher.Multiplat.Pages
             OnPropertyChanged(nameof(IsListVisible));
         }
 
-        private async void Refresh_OnClicked(object sender, EventArgs e)
+        public async void Refresh_OnClicked(object sender, EventArgs e)
         {            
             await UpdateScripts();            
         }

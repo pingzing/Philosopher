@@ -8,11 +8,16 @@ using Xamarin.Forms;
 
 namespace Philosopher.Multiplat.Pages
 {
-    public partial class MainPage : TabbedPage
+    public partial class MainPage : NavigationPage
     {
         public MainPage()
         {
+            InitializeComponent();            
+        }
+
+        public MainPage(Page root) : base(root)
+        {            
             InitializeComponent();
-        }        
+        }
     }
 }

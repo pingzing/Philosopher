@@ -54,7 +54,7 @@
             TextColor="White"
             Clicked="ExpandHideButton_OnClicked"
             VerticalOptions="End"
-            IsVisible="{Binding ResponseLabelHeight, Converter={StaticResource TrueIfGrEqualConverter}, ConverterParameter=28}"/>
+            IsVisible="{Binding IsResponseLabelTooTall}"/>
 
     <ListView x:Name="ScriptsListView"
               Grid.Row="3"
@@ -109,8 +109,8 @@
     </ListView>
   </Grid>
   
-<ContentPage.ToolbarItems>
-  <ToolbarItem Text="Refresh" Icon="Assets/refreshIcon.png" Activated="Refresh_OnClicked"/>
-</ContentPage.ToolbarItems>
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Refresh" Icon="Assets/refreshIcon.png" Clicked="Refresh_OnClicked"/>
+  </ContentPage.ToolbarItems>
 
 </ContentPage>

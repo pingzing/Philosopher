@@ -18,8 +18,8 @@ namespace Philosopher.Multiplat
                 iOS: DependencyService.Register<DataService>,
                 Android: DependencyService.Register<DataService>);
             var idiom = Device.Idiom;
-            // The root page of your application
-            MainPage = new MainPage();
+            // The root page of your application                     
+            MainPage = new MainPage(new MainTabbedPage());
         }
 
         protected override void OnStart()

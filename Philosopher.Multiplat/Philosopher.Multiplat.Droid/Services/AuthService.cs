@@ -8,7 +8,9 @@ using Java.Security;
 using Java.Util;
 using Javax.Crypto;
 using Java.IO;
+using Philosopher.Multiplat.Droid.Services;
 
+[assembly: Xamarin.Forms.Dependency(typeof(AuthService))]
 namespace Philosopher.Multiplat.Droid.Services
 {
     public class AuthService : IAuthService
