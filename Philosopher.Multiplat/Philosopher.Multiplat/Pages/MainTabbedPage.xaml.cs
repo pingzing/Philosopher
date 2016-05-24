@@ -12,7 +12,7 @@ namespace Philosopher.Multiplat.Pages
     {
         public MainTabbedPage()
         {
-            InitializeComponent();
+            InitializeComponent();      
         }        
     }
 }

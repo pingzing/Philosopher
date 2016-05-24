@@ -18,19 +18,22 @@ using Xamarin.Forms;
 namespace Philosopher.Multiplat.Pages
 {
     public partial class ScriptsPage : ContentPage, INotifyPropertyChanged
-    {               
+    {
+        private readonly IAuthService _authService;                       
+
+    
         public ScriptsPage()
         {
             InitializeComponent();           
             this.BindingContext = ((App) Application.Current).Locator.Scripts;
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
-            var navigable = this.BindingContext as INavigable;
-            navigable?.Appearing();
-            this.ConnectedToLink.Clicked += ConnectedToLink_OnClicked;            
-        }                
+            this.ConnectedToLink.Clicked += ConnectedToLink_OnClicked;
+            var vm = this.BindingContext as ScriptsViewModel;
+            vm?.Appearing();
+        }        
 
         protected override void OnDisappearing()
         {
