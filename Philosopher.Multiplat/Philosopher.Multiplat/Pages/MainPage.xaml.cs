@@ -12,6 +12,11 @@ namespace Philosopher.Multiplat.Pages
     {
         public MainPage()
         {
+            InitializeComponent();            
+        }
+
+        public MainPage(Page root) : base(root)
+        {            
             InitializeComponent();
         }
     }

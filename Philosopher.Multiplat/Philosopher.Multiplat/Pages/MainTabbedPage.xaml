@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pages="clr-namespace:Philosopher.Multiplat.Pages;assembly=Philosopher.Multiplat"
              x:Class="Philosopher.Multiplat.Pages.MainTabbedPage">
-  <pages:WakePage Title="Wakeup"/>
-  <pages:ScriptsPage Title="Scripts"/>  
+  <pages:WakePage x:Name="WakePage" Title="Wakeup"/>
+  <pages:ScriptsPage x:Name="ScriptsPage" Title="Scripts"/>      
 </TabbedPage>

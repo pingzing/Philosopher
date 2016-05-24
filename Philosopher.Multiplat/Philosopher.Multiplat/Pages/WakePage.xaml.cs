@@ -93,8 +93,8 @@ namespace Philosopher.Multiplat.Pages
         }
 
         private void MacEntry_Unfocused(object sender, FocusEventArgs e)
-        {
-            if(!_macRegex.IsMatch(MacEntry.Text))
+        {            
+            if(MacEntry.Text != null && !_macRegex.IsMatch(MacEntry.Text))
             {
                 MacAddress = "";
             }

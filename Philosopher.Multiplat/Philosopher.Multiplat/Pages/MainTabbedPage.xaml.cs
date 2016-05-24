@@ -13,6 +13,13 @@ namespace Philosopher.Multiplat.Pages
         public MainTabbedPage()
         {
             InitializeComponent();
-        }        
+      
+        }
+
+        private void MenuItem_OnClicked(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("RefreshItem clicked.");
+            this.ScriptsPage.Refresh_OnClicked(sender, e);
+        }
     }
 }
