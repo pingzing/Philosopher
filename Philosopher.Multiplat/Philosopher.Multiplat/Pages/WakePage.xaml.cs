@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Philosopher.Multiplat.Models;
 using Xamarin.Forms;
 using Philosopher.Multiplat.Services;
+using Philosopher.Multiplat.Viewmodels;
 using Philosopher.Services;
 
 namespace Philosopher.Multiplat.Pages
@@ -15,73 +16,12 @@ namespace Philosopher.Multiplat.Pages
     public partial class WakePage : ContentPage
     {
         private readonly Regex _macRegex = new Regex(@"^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$");
-        private readonly Regex _macCharsRegex = new Regex(@"[0-9A-Fa-f:-]{1,17}");
-        private IMagicPacketService _magicPacketService;
-        private SettingsService _settingsService;
-
-        private string _hostname;
-        public string HostName
-        {
-            get { return _hostname; }
-            set
-            {
-                if (_hostname != value)
-                {
-                    _hostname = value;
-                    OnPropertyChanged(nameof(HostName));
-                }
-            }
-        }
-
-        private string _portNumber;
-        public string PortNumber
-        {
-            get { return _portNumber; }
-            set
-            {
-                if (_portNumber != value)
-                {
-                    _portNumber = value;
-                    OnPropertyChanged(nameof(PortNumber));
-                }
-            }
-        }
-
-        private string _macAddress;
-        public string MacAddress
-        {
-            get { return _macAddress; }
-            set
-            {
-                if (_macAddress != value)
-                {
-                    _macAddress = value;
-                    OnPropertyChanged(nameof(MacAddress));
-                }
-            }
-        }
-
-        private ObservableCollection<WakeupTarget> _savedWakeupTargets = new ObservableCollection<WakeupTarget>();
-        public ObservableCollection<WakeupTarget> SavedWakeupTargets
-        {
-            get { return _savedWakeupTargets; }
-            set
-            {
-                if (_savedWakeupTargets != value)
-                {
-                    _savedWakeupTargets = value;
-                    OnPropertyChanged(nameof(SavedWakeupTargets));
-                }
-            }
-        }
+        private readonly Regex _macCharsRegex = new Regex(@"[0-9A-Fa-f:-]{1,17}");            
 
         public WakePage()
         {
             InitializeComponent();
-            this.BindingContext = this;
-            _magicPacketService = new MagicPacketService();
-            _settingsService = new SettingsService();
-            SavedWakeupTargets = new ObservableCollection<WakeupTarget>(_settingsService.GetWakeupTargets());            
+            this.BindingContext = ((App)Application.Current).Locator.Wakeup;            
         }
 
         private void MacEntry_TextChanged(object sender, TextChangedEventArgs e)
@@ -96,7 +36,7 @@ namespace Philosopher.Multiplat.Pages
         {            
             if(MacEntry.Text != null && !_macRegex.IsMatch(MacEntry.Text))
             {
-                MacAddress = "";
+                (sender as Entry).Text = "";
             }
         }
 
@@ -105,12 +45,15 @@ namespace Philosopher.Multiplat.Pages
             int _;
             if (!String.IsNullOrWhiteSpace(e.NewTextValue) && !Int32.TryParse(e.NewTextValue, out _))
             {
-                PortNumber = e.OldTextValue;         
+                (sender as Entry).Text = e.OldTextValue;         
             }
         }
 
         protected override void OnAppearing()
         {
+            var vm = this.BindingContext as WakeupViewModel;
+            vm?.Appearing();
+
             SendButton.Clicked += SendButton_Clicked;            
             PortNumberEntry.TextChanged += PortNumberEntry_TextChanged;
             MacEntry.TextChanged += MacEntry_TextChanged;
@@ -120,6 +63,9 @@ namespace Philosopher.Multiplat.Pages
 
         protected override void OnDisappearing()
         {
+            var vm = this.BindingContext as WakeupViewModel;
+            vm?.Disappearing();
+
             SendButton.Clicked -= SendButton_Clicked;            
             PortNumberEntry.TextChanged -= PortNumberEntry_TextChanged;
             MacEntry.TextChanged -= MacEntry_TextChanged;
@@ -129,38 +75,14 @@ namespace Philosopher.Multiplat.Pages
 
         private void SendButton_Clicked(object sender, EventArgs eventArgs)
         {
-            if (!String.IsNullOrWhiteSpace(HostName)
-                && !String.IsNullOrWhiteSpace(PortNumber)
-                && !String.IsNullOrWhiteSpace(MacAddress))
-            {
-                int portNumber = Int32.Parse(PortNumber);
-                _magicPacketService.SendMagicPacket(HostName, portNumber, MacAddress);
-                AddEntryToRecentList(HostName, PortNumber, MacAddress);
-            }
+            var vm = this.BindingContext as WakeupViewModel;
+            vm?.SendCommand.Execute(null);
         }
 
         private void RecentListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            WakeupTarget target = (WakeupTarget)e.Item;
-            HostName = target.Hostname;
-            PortNumber = target.PortNumber.ToString();
-            MacAddress = target.MacAddress;
-        }
-
-        private void AddEntryToRecentList(string hostName, string portNumber, string macAddress)
-        {
-            WakeupTarget newTarget = new WakeupTarget
-            {
-                Hostname = hostName,
-                PortNumber = Int32.Parse(portNumber),
-                MacAddress = macAddress
-            };
-            if (!SavedWakeupTargets.Contains(newTarget))
-            {
-                SavedWakeupTargets.Insert(0, newTarget);
-            }
-
-            _settingsService.SaveWakeupTargets(SavedWakeupTargets.ToList());
-        }
+            var vm = this.BindingContext as WakeupViewModel;
+            vm?.WakeupTargetTappedCommand.Execute((WakeupTarget)e.Item);
+        }       
     }
 }

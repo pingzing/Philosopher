@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Philosopher.Multiplat.Helpers;
 using Philosopher.Multiplat.Pages;
 using Philosopher.Multiplat.Services;
 using Xamarin.Forms;
@@ -12,8 +13,11 @@ namespace Philosopher.Multiplat
 {
     public class App : Application
     {
+        public Locator Locator { get; private set; }
+
         public App()
         {
+            Locator = new Locator();
             Device.OnPlatform(
                 iOS: DependencyService.Register<DataService>,
                 Android: DependencyService.Register<DataService>);
