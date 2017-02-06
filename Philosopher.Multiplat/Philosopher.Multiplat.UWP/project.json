@@ -1,14 +1,14 @@
 ﻿{
   "dependencies": {
-    "Acr.UserDialogs": "5.1.0",
+    "Acr.UserDialogs": "6.3.7",
     "Microsoft.Bcl": "1.1.10",
     "Microsoft.Bcl.Build": "1.0.21",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "MvvmLightLibs": "5.3.0",
     "Newtonsoft.Json": "8.0.3",
-    "rda.SocketsForPCL": "2.0.0",
-    "Xam.Plugins.Settings": "2.1.0",
-    "Xamarin.Forms": "2.2.0.31"
+    "rda.SocketsForPCL": "2.0.2",
+    "Xam.Plugins.Settings": "2.5.2.1",
+    "Xamarin.Forms": "2.3.3.180"
   },
   "frameworks": {
     "uap10.0": {}
