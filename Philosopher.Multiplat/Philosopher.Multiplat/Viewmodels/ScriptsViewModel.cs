@@ -240,69 +240,15 @@ namespace Philosopher.Multiplat.Viewmodels
             PromptResult result = await UserDialogs.Instance.PromptAsync(hostnameConfig);
             if (result != null && result.Ok && !String.IsNullOrWhiteSpace(result.Text))
             {
-                string text = result.Text;
-                HostnamePrefix prefix;
-                if (text.Contains("http://"))
+                Uri enteredUri;
+                bool validUri = Uri.TryCreate(result.Text, UriKind.Absolute, out enteredUri);
+                if (validUri)
                 {
-                    prefix = HostnamePrefix.Http;
-                }
-                else if (text.Contains("https://"))
-                {
-                    prefix = HostnamePrefix.Https;
+                    await ChangeServer($"{enteredUri.Scheme}://{enteredUri.Host}", (uint)enteredUri.Port);
                 }
                 else
                 {
-                    prefix = HostnamePrefix.None;
-                }
-                switch (prefix)
-                {
-                    case HostnamePrefix.Http:
-                        text = text.Replace("http://", "");
-                        break;
-                    case HostnamePrefix.Https:
-                        text = text.Replace("https://", "");
-                        break;
-                    case HostnamePrefix.None:
-                    default:
-                        break;
-                }
-
-                string[] inputs = text.Split(':');
-                string hostname = inputs.FirstOrDefault();
-                if (hostname == null)
-                {
-                    await UserDialogs.Instance.AlertAsync("You must enter a hostname.", "Invalid hostname");
-                    return;
-                }
-                switch (prefix)
-                {
-                    case HostnamePrefix.Http:
-                        hostname = $"http://{hostname}";
-                        break;
-                    case HostnamePrefix.Https:
-                        hostname = $"https://{hostname}";
-                        break;
-                    case HostnamePrefix.None:
-                    default:
-                        break;
-                }
-
-                bool maybeHasPort = inputs.Skip(1).Take(1).FirstOrDefault() != null;
-                if (maybeHasPort)
-                {
-                    uint portNum;
-                    if (UInt32.TryParse(inputs[1], out portNum))
-                    {
-                        await ChangeServer(hostname, portNum);
-                    }
-                    else
-                    {
-                        await UserDialogs.Instance.AlertAsync("You must enter a hostname.", "Invalid hostname");
-                    }
-                }
-                else
-                {
-                    await ChangeServer(hostname, Constants.DEFAULT_PORT);
+                    await UserDialogs.Instance.AlertAsync("Unable to parse the entered hostname. Are you sure it's a valid URL?", "Invalid hostname");
                 }
             }
         }
