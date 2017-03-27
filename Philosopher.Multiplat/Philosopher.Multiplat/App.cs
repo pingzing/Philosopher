@@ -8,7 +8,7 @@ using Philosopher.Multiplat.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Philosopher.Multiplat
 {
     public class App : Application

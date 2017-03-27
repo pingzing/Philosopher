@@ -59,6 +59,7 @@ namespace Philosopher.Multiplat.Services
             BaseUrl = $"{hostname}";
             PortNumber = portNumber;           
             _client = new HttpClient();
+            _client.DefaultRequestHeaders.IfModifiedSince = DateTime.UtcNow;
             return this;
         }
 

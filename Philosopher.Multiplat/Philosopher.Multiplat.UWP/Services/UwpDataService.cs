@@ -67,7 +67,7 @@ namespace Philosopher.Multiplat.UWP.Services
             _allowSelfSignedCertFilter = new HttpBaseProtocolFilter();
             _allowSelfSignedCertFilter.AllowUI = false;
             _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.Untrusted);
-            _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.InvalidName);
+            _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.InvalidName);            
 
             _client = new HttpClient(_allowSelfSignedCertFilter);
             return this;
@@ -90,8 +90,9 @@ namespace Philosopher.Multiplat.UWP.Services
             _allowSelfSignedCertFilter.AllowUI = false;
             _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.Untrusted);
             _allowSelfSignedCertFilter.IgnorableServerCertificateErrors.Add(ChainValidationResult.InvalidName);
-            _allowSelfSignedCertFilter.ServerCredential = credential;
+            _allowSelfSignedCertFilter.ServerCredential = credential;            
             _client = new HttpClient(_allowSelfSignedCertFilter);
+            _client.DefaultRequestHeaders.IfModifiedSince = DateTime.UtcNow;
         }
 
         public async Task<string> CallServerScript(ServerScript script, CancellationToken token)

@@ -64,7 +64,6 @@ namespace Philosopher.Multiplat.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::Philosopher.Multiplat.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
 			global::Splat.Resource.String.library_name = global::Philosopher.Multiplat.Droid.Resource.String.library_name;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Philosopher.Multiplat.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Attribute
