@@ -12,7 +12,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Philosopher.Multiplat.Droid
 {
-    [Activity(Label = "Philosopher.Multiplat", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Philosopher", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)

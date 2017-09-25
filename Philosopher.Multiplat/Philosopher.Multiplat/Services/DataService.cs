@@ -59,7 +59,7 @@ namespace Philosopher.Multiplat.Services
             BaseUrl = $"{hostname}";
             PortNumber = portNumber;           
             _client = new HttpClient();
-            _client.DefaultRequestHeaders.IfModifiedSince = DateTime.UtcNow;
+            //_client.DefaultRequestHeaders.IfModifiedSince = DateTime.UtcNow;
             return this;
         }
 
@@ -107,7 +107,7 @@ namespace Philosopher.Multiplat.Services
                     });
                 }
             }
-            catch(Exception ex) when(ex is COMException || ex is WebException)
+            catch(Exception ex) when(ex is COMException || ex is WebException || ex is HttpRequestException)
             {
                 System.Diagnostics.Debug.WriteLine("GetScripts failed because: " + ex.ToString());
                 return new ResultOrErrorResponse<List<ServerScript>>(new GenericHttpResponse
